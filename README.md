@@ -2,7 +2,7 @@
 
 Templates for generating [Pension Wise] output documents.
 
-For use with the [Pension Wise][pensionwise] output document systems ([output] and [pdf_output]).
+For use with the [Pension Wise] output document systems ([output] and [pdf_output]).
 
 ## Installation
 
