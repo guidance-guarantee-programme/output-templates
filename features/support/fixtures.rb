@@ -1,6 +1,10 @@
+require 'ostruct'
+
 module Fixtures
   def fixture(name, attribues = {})
-    FIXTURES.fetch(name).call.merge(attribues)
+    fixture_data = FIXTURES.fetch(name).call.merge(attribues)
+
+    OpenStruct.new(fixture_data)
   end
 
   FIXTURES = {

@@ -1,4 +1,5 @@
 require 'output/templates'
+require_relative 'support/string_extensions'
 
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
@@ -14,7 +15,9 @@ RSpec.configure do |config|
   config.disable_monkey_patching!
   config.profile_examples = 10
   config.order = :random
-  config.warnings = true
+  config.warnings = false # SASS is too noisy :(
 
   Kernel.srand config.seed
 end
+
+include Output::Templates

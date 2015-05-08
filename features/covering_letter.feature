@@ -1,4 +1,3 @@
-@wip
 Feature: Covering letter
   As Pension Wise
   We want to set customer's expectations about their record of guidance
