@@ -43,8 +43,7 @@ Scenario: Records of guidance include the information provided to us by the cust
   When we generate a tailored record of guidance
   Then the record of guidance should include their details
 
-@todo
 Scenario: Records of guidance include information about the appointment
-  Given we have captured appointment details in an appointment summary
+  Given we have captured appointment details
   When we generate a tailored record of guidance
   Then the record of guidance should include the details of the appointment
