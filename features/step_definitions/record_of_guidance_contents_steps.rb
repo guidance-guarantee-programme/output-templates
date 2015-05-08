@@ -22,6 +22,10 @@ Given(/^we have captured the customer's details$/) do
   @output_document = fixture(:output_document)
 end
 
+Given(/^we have captured appointment details$/) do
+  @output_document = fixture(:output_document)
+end
+
 Then(/^the sections it includes should be \(in order\):$/) do |table|
   sections = table.raw.flatten
 
@@ -54,4 +58,10 @@ end
 Then(/^the record of guidance should include their details$/) do
   expect(@rendered_template).to have_content(@output_document.attendee_name)
   expect(@rendered_template).to have_content(@output_document.value_of_pension_pots)
+end
+
+Then(/^the record of guidance should include the details of the appointment$/) do
+  expect(@rendered_template).to have_content(@output_document.appointment_date)
+  expect(@rendered_template).to have_content(@output_document.guider_first_name)
+  expect(@rendered_template).to have_content(@output_document.guider_organisation)
 end
