@@ -9,6 +9,15 @@ Given(/^we don't know that any of the predefined circumstances apply to the cust
                              poor_health: false)
 end
 
+Given(/^the customer has access to income during retirement from (.*?)$/) do |sources_of_income|
+  income_in_retirement = case sources_of_income
+                         when 'only their DC pot and state pension' then 'pension'
+                         when 'multiple sources'                    then 'other'
+                         end
+
+  @output_document = fixture(:output_document, income_in_retirement: income_in_retirement)
+end
+
 Then(/^the sections it includes should be \(in order\):$/) do |table|
   sections = table.raw.flatten
 
@@ -27,4 +36,13 @@ Then(/^the sections it includes should be \(in order\):$/) do |table|
   end
 
   expect(@rendered_template).to include_output_document_sections(sections)
+end
+
+Then(/^the "pension pot" section should be the "(.*?)" version$/) do |version|
+  version = case version
+            when 'only their DC pot and state pension' then 'pension'
+            when 'multiple sources'                    then 'other'
+            end
+
+  expect(@rendered_template).to include_output_document_section('pension pot').at_version(version)
 end
