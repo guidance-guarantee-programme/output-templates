@@ -8,21 +8,22 @@ RSpec.describe SectionSelectors::Tailored do
                      poor_health)
 
   describe '#call' do
-    let(:attributes) { Hash[CIRCUMSTANCES.map { |c| [c, false] }] }
-    let(:output_document) { double('Output Document', attributes) }
+    let(:circumstances) { Hash[CIRCUMSTANCES.map { |c| [c, false] }] }
+    let(:income_in_retirement) { 'pension' }
+    let(:output_document) { double('Output Document', circumstances.merge(income_in_retirement: income_in_retirement)) }
 
     subject { described_class.new.call(output_document) }
 
     CIRCUMSTANCES.each do |circumstance|
       context "with applicable circumstance '#{circumstance}'" do
-        before { attributes[circumstance] = true }
+        before { circumstances[circumstance] = true }
 
         it do
           is_expected.to eq(%I(
             header
             covering_letter
             introduction
-            pension_pot_other
+            pension_pot_#{income_in_retirement}
             options_overview
             #{circumstance}
             other_information
@@ -36,7 +37,7 @@ RSpec.describe SectionSelectors::Tailored do
       let(:applicable_circumstances) { CIRCUMSTANCES.sample(3) }
 
       before do
-        applicable_circumstances.each { |circumstance| attributes[circumstance] = true }
+        applicable_circumstances.each { |circumstance| circumstances[circumstance] = true }
       end
 
       it { is_expected.to include(*applicable_circumstances) }
