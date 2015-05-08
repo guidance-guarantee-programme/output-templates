@@ -18,6 +18,10 @@ Given(/^the customer has access to income during retirement from (.*?)$/) do |so
   @output_document = fixture(:output_document, income_in_retirement: income_in_retirement)
 end
 
+Given(/^we have captured the customer's details$/) do
+  @output_document = fixture(:output_document)
+end
+
 Then(/^the sections it includes should be \(in order\):$/) do |table|
   sections = table.raw.flatten
 
@@ -45,4 +49,9 @@ Then(/^the "pension pot" section should be the "(.*?)" version$/) do |version|
             end
 
   expect(@rendered_template).to include_output_document_section('pension pot').at_version(version)
+end
+
+Then(/^the record of guidance should include their details$/) do
+  expect(@rendered_template).to have_content(@output_document.attendee_name)
+  expect(@rendered_template).to have_content(@output_document.value_of_pension_pots)
 end
