@@ -53,15 +53,16 @@ module OutputDocumentSectionsMatchers
     chain :at_version, :version
 
     match do |rendered_template|
+      @rendered_template = rendered_template.to_s
       section_indexes = sections.map do |section|
-        rendered_template.to_s =~ section_match_expression(section)
+        @rendered_template.to_s =~ section_match_expression(section)
       end
 
       !section_indexes.any?(&:nil?) && section_indexes.sort == section_indexes
     end
 
     failure_message do
-      actual_sections = output.scan(section_capture_expression).map(&:first)
+      actual_sections = @rendered_template.scan(section_capture_expression).map(&:first)
 
       "expected rendered template to include output document sections (in order):\n" \
       "  #{sections}\n\n" \
