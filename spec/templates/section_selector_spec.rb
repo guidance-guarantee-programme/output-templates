@@ -15,5 +15,11 @@ RSpec.describe SectionSelector do
 
       it { is_expected.to be_a(SectionSelectors::Generic) }
     end
+
+    context 'with template "ineligible"' do
+      let(:template_id) { :ineligible }
+
+      it { is_expected.to be_a(SectionSelectors::Ineligible) }
+    end
   end
 end
