@@ -18,7 +18,7 @@ module Fixtures
                            'London',
                            'Greater London',
                            'SW1A 2HQ'].join("\n"),
-        date_of_appointment: '5 February 2015',
+        appointment_date: '5 February 2015',
         value_of_pension_pots: '£35,000 to £55,000',
         income_in_retirement: 'pension',
         guider_first_name: 'Penelope',
