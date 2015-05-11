@@ -3,7 +3,7 @@ module Output
     module SectionSelectors
       class Ineligible
         def call(*)
-          :ineligible
+          [:header, :ineligible, :footer]
         end
       end
     end
