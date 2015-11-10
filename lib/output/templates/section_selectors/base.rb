@@ -6,11 +6,15 @@ module Output
           %I(
             header
             covering_letter
-            introduction
-            pension_pot_#{output_document.income_in_retirement}
+            getting_started
             options_overview
-            generic_guidance
-            other_information
+            inheritance_tax
+            scams
+            further_guidance
+            sup_final_salary
+            sup_benefits
+            sup_ill_health
+            sup_debt
             footer
           )
         end
