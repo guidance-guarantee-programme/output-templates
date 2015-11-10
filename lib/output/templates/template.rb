@@ -12,7 +12,7 @@ module Output
       end
 
       def render(output_document)
-        pages = section_selector.call(output_document)
+        pages = section_selector.call
         renderer.call(output_document, pages)
       end
     end
