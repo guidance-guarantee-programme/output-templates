@@ -1,4 +1,4 @@
-RSpec.describe SectionSelectors::Generic do
+RSpec.describe SectionSelectors::Base do
   describe '#call' do
     let(:income_in_retirement) { 'pension' }
     let(:output_document) { double('Output Document', income_in_retirement: income_in_retirement) }

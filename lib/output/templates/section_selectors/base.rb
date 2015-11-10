@@ -1,7 +1,7 @@
 module Output
   module Templates
     module SectionSelectors
-      class Generic
+      class Base
         def call(output_document)
           %I(
             header
