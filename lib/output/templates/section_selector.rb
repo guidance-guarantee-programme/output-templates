@@ -1,6 +1,5 @@
-require 'output/templates/section_selectors/generic'
+require 'output/templates/section_selectors/base'
 require 'output/templates/section_selectors/ineligible'
-require 'output/templates/section_selectors/tailored'
 
 module Output
   module Templates
