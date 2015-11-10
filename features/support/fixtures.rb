@@ -19,8 +19,6 @@ module Fixtures
                            'Greater London',
                            'SW1A 2HQ'].join("\n"),
         appointment_date: '5 February 2015',
-        value_of_pension_pots: '£35,000 to £55,000',
-        income_in_retirement: 'pension',
         guider_first_name: 'Penelope',
         guider_organisation: 'Citizens Advice',
         lead: 'You recently had a Pension Wise guidance appointment with Penelope ' \
