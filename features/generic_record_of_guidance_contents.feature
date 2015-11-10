@@ -4,7 +4,7 @@ Feature: Generic record of guidance contents
   So that customers are reminded of what was discussed, including next steps that they may wish to take
 
 Scenario: Generic record of guidance
-  Given we don't know that any of the predefined circumstances apply to the customer
+  Given a customer has had a Pension Wise appointment
   When we generate a generic record of guidance
   Then the sections it includes should be (in order):
     | introduction             |
