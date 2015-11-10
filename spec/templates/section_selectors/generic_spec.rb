@@ -8,7 +8,6 @@ RSpec.describe SectionSelectors::Generic do
     it do
       is_expected.to eq(%I(
         header
-        covering_letter
         introduction
         pension_pot_#{income_in_retirement}
         options_overview

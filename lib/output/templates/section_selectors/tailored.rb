@@ -13,7 +13,6 @@ module Output
         def call(output_document)
           [
             :header,
-            :covering_letter,
             :introduction,
             :"pension_pot_#{output_document.income_in_retirement}",
             :options_overview,
