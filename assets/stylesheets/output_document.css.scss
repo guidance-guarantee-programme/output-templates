@@ -557,22 +557,6 @@ td {
   }
 }
 
-@page covering-letter {
-  margin: 90px 90px 0;
-
-  @top-center {
-    content: '';
-  }
-
-  @bottom-left {
-    background-image: none;
-  }
-
-  @bottom-right {
-    content: '';
-  }
-}
-
 @page intro {
   margin-top: 48px;
 
@@ -599,10 +583,6 @@ td {
   @bottom-left {
     background-image: none;
   }
-}
-
-.page-covering-letter {
-  page: covering-letter;
 }
 
 .page-intro {
