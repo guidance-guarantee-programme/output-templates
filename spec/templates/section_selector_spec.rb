@@ -4,16 +4,10 @@ RSpec.describe SectionSelector do
 
     subject { described_class.for(template_id) }
 
-    context 'with template "tailored"' do
-      let(:template_id) { :tailored }
+    context 'with template "base"' do
+      let(:template_id) { :base }
 
-      it { is_expected.to be_a(SectionSelectors::Tailored) }
-    end
-
-    context 'with template "generic"' do
-      let(:template_id) { :generic }
-
-      it { is_expected.to be_a(SectionSelectors::Generic) }
+      it { is_expected.to be_a(SectionSelectors::Base) }
     end
 
     context 'with template "ineligible"' do
