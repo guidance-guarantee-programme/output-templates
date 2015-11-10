@@ -24,14 +24,7 @@ module Fixtures
         guider_first_name: 'Penelope',
         guider_organisation: 'Citizens Advice',
         lead: 'You recently had a Pension Wise guidance appointment with Penelope ' \
-              'from Citizens Advice on 5 February 2015.',
-        continue_working: true,
-        unsure: true,
-        leave_inheritance: true,
-        wants_flexibility: true,
-        wants_security: true,
-        wants_lump_sum: true,
-        poor_health: true
+              'from Citizens Advice on 5 February 2015.'
       }
     end
   }
