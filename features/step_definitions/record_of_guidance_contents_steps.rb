@@ -21,6 +21,21 @@ Then(/^the sections it includes should be \(in order\):$/) do |table|
   expect(@rendered_template).to include_output_document_sections(sections)
 end
 
+Then(/^it should include supplementary information about "(.*?)"$/) do |topic|
+  section = case topic
+            when 'Benefits and pension income' then
+              'benefits'
+            when 'Debt and pensions' then
+              'debt'
+            when 'Pensions and ill health' then
+              'ill health'
+            when 'Final salary or career average pensions' then
+              'defined benefit pensions'
+            end
+
+  expect(@rendered_template).to include_output_document_section(section)
+end
+
 Then(/^the record of guidance should include their details$/) do
   expect(@rendered_template).to have_content(@output_document.attendee_name)
 end
