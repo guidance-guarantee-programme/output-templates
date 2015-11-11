@@ -7,10 +7,12 @@ Scenario: Record of guidance
   Given a customer has had a Pension Wise appointment
   When we generate a record of guidance
   Then the sections it includes should be (in order):
-    | introduction             |
+    | getting started          |
     | options overview         |
     | detail about each option |
-    | other information        |
+    | inheritance tax          |
+    | scams                    |
+    | further guidance         |
 
 Scenario: Records of guidance include the information provided to us by the customer
   Given we have captured the customer's details

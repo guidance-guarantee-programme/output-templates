@@ -6,10 +6,12 @@ RSpec.describe SectionSelectors::Base do
       is_expected.to eq(%I(
         header
         covering_letter
-        introduction
+        getting_started
         options_overview
         generic_guidance
-        other_information
+        inheritance_tax
+        scams
+        further_guidance
         footer
       ))
     end
