@@ -16,8 +16,8 @@ module Output
             :generic_guidance,
             :inheritance_tax,
             :scams,
-            supplementary_sections(output_document),
             :further_guidance,
+            supplementary_sections(output_document),
             :footer
           ].flatten
         end
