@@ -30,8 +30,8 @@
 //*------------ colours ------------*/
 $color-black: #000;
 $color-white: #fff;
-$color-blue: #00385d;
-$color-violet: #ae398a;
+$color-blue: #17375f;
+$color-violet: #b0348b;
 $color-grey-jumbo: #7a7a7f;
 $color-grey-makara: #857b6f;
 $color-grey-dusty: #999;
@@ -51,8 +51,8 @@ $color-table-header: $color-grey-makara;
 
 $color-untouched: $color-blue;
 $color-annuity: $color-orange;
-$color-adjustable: $color-green;
-$color-chunks: $color-lightblue;
+$color-adjustable: $color-lightblue;
+$color-chunks: $color-green;
 $color-whole: $color-violet;
 $color-mix: $color-red;
 
@@ -171,6 +171,10 @@ h3 {
     margin-bottom: 20px;
   }
 
+  &.option {
+    margin-bottom: 16px;
+  }
+
 }
 
 h4 {
@@ -185,6 +189,15 @@ h4 {
 
   &.icon {
     margin-bottom: 40px;
+  }
+
+  &.pull.icon {
+    margin-bottom: 25px;
+  }
+
+  &.downshift {
+    margin-top: 36px;
+    margin-bottom: 25px;
   }
 }
 
@@ -231,8 +244,10 @@ ul, ol {
 
 hr {
   border: 0;
-  height: 2px;
-  background: $color-grey-dusty;
+  height: 1px;
+  background: $color-blue;
+  margin-top: 40px;
+  margin-bottom: -10px;
 }
 
 .l-text-medium {
@@ -307,7 +322,7 @@ hr {
 
 //*------------ helpers/objects ------------*/
 .emphasize {
-  font-family: "HelveticaNeueLTStd-Md";
+  font-family: "HelveticaNeueLTStd-Bd";
 
   p {
     margin-bottom: 18px;
@@ -476,17 +491,6 @@ h2 {
 @page {
   size: A4;
   margin: 78px 140px;
-
-  @bottom-right-corner {
-    counter-reset: page;
-    content: "Summary of your pension options | " counter(page);
-    font-family: "HelveticaNeueLTStd-Lt";
-    color: $color-blue;
-    font-size: 12px;
-    vertical-align: top;
-    margin-top: 25px;
-    margin-left: -125px;
-  }
 }
 
 @page letter {
