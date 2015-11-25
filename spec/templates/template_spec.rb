@@ -10,7 +10,7 @@ RSpec.describe Template do
     subject { template.render(output_document) }
 
     before do
-      allow(section_selector).to receive(:call).with(output_document).and_return(pages)
+      allow(section_selector).to receive(:call).and_return(pages)
       allow(renderer).to receive(:call).with(output_document, pages).and_return(rendered_output)
     end
 
