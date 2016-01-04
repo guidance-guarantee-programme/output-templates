@@ -305,6 +305,40 @@ hr {
   left: 432px;
 }
 
+//*-------------- themes --------------------*/
+.theme--large {
+  p,
+  ul,
+  ol,
+  .letter-intro {
+    font-size: 18pt;
+  }
+
+  .l-address {
+    p {
+      font-size: 12pt;
+    }
+  }
+
+  .reference,
+  .summary,
+  .emphasise {
+    font-size: 17pt;
+  }
+
+  h2 {
+    font-size: 30pt;
+  }
+
+  h3 {
+    font-size: 18pt;
+  }
+
+  h4 {
+    font-size: 18pt;
+  }
+}
+
 //*-------------- mixins --------------------*/
 @mixin bullet($color, $radius, $top: 5px) {
   &:before {
