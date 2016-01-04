@@ -4,4 +4,5 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
   <%= stylesheet('output_document') %>
 </head>
-<body class="output-document">
+<body class="output-document <% if theme_large %>output-document--large<% end %>">
+  <div class="theme <% if theme_large %>theme--large<% end %>">
