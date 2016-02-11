@@ -26,7 +26,27 @@ module Output
         "<style>\n#{css}\n</style>"
       end
 
+      def keywords
+        [format]
+      end
+
+      def kind
+        large_text? ? 'output-document--large' : 'output-document--standard'
+      end
+
+      def theme
+        large_text? ? 'theme--large' : 'theme--standard'
+      end
+
       private
+
+      def format
+        format_preference.tr('_', ' ')
+      end
+
+      def large_text?
+        format_preference == 'large_text'
+      end
 
       def stylesheet_path(base_file_name)
         Pathname.new(asset_root).join('stylesheets', "#{base_file_name}.css.scss")
