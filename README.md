@@ -1,8 +1,8 @@
 # Output::Templates
 
-Templates for generating [Pension Wise] output documents.
+Templates for generating [Pension Wise] Summary Documents.
 
-For use with the [Pension Wise] output document systems ([output] and [pdf_output]).
+For use with the [Pension Wise Summary Generator][summary_generator]).
 
 ## Installation
 
@@ -39,5 +39,4 @@ To install this gem onto your local machine, run `bundle exec rake install`.
 5. Create a new Pull Request
 
 [pension wise]: https://www.pensionwise.gov.uk
-[output]: https://github.com/guidance-guarantee-programme/output
-[pdf_output]: https://github.com/guidance-guarantee-programme/pdf_output
+[summary_generator]: https://github.com/guidance-guarantee-programme/summary_generator
