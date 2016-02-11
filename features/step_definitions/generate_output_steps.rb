@@ -30,7 +30,7 @@ Given(/^the customer requires supplementary information about "([^"]*)"$/) do |t
   @output_document = fixture(:output_document, supplementary_sections)
 end
 
-When(/^we generate a record of guidance$/) do
+When(/^we generate a summary document$/) do
   @rendered_template = Output::Templates.template(:base).render(@output_document)
 end
 

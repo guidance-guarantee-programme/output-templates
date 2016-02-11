@@ -36,11 +36,11 @@ Then(/^it should include supplementary information about "(.*?)"$/) do |topic|
   expect(@rendered_template).to include_output_document_section(section)
 end
 
-Then(/^the record of guidance should include their details$/) do
+Then(/^the summary document should include their details$/) do
   expect(@rendered_template).to have_content(@output_document.attendee_name)
 end
 
-Then(/^the record of guidance should include the details of the appointment$/) do
+Then(/^the summary document should include the details of the appointment$/) do
   expect(@rendered_template).to have_content(@output_document.appointment_date)
   expect(@rendered_template).to have_content(@output_document.guider_first_name)
   expect(@rendered_template).to have_content(@output_document.guider_organisation)
