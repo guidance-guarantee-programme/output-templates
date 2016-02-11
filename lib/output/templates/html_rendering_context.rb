@@ -26,6 +26,10 @@ module Output
         "<style>\n#{css}\n</style>"
       end
 
+      def large_text?
+        format_preference == 'large_text'
+      end
+
       def keywords
         [format]
       end
@@ -42,10 +46,6 @@ module Output
 
       def format
         format_preference.tr('_', ' ')
-      end
-
-      def large_text?
-        format_preference == 'large_text'
       end
 
       def stylesheet_path(base_file_name)
