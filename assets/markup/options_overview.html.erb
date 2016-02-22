@@ -3,9 +3,22 @@
 
 <h2>The 6 options discussed in the appointment</h2>
 
+<% if appointment_50_54? %>
+  <!-- section: options may have changed warning -->
+  <p>These are the options that are available now. They may have changed by the time you reach 55 and are able to take money from your pension pot.</p>
+  <p>You may be able to take your pot sooner but only in rare cases, eg early retirement due to ill health.</p>
+<% end %>
+
 <h3 class="option option--untouched">Leave your pot untouched</h3>
 
-<p>You don’t have to take money from your pot straight away. You can leave your money invested and take it when you’re ready. Your pot could grow further and give you a larger amount of money to last for a shorter amount of time. You may also have greater choice in the future if pension providers introduce new products.</p>
+<p>
+  <% if appointment_50_54? %>
+    You don’t have to take money from your pot as soon as you reach 55.
+  <% else %>
+    You don’t have to take money from your pot straight away.
+  <% end %>
+  You can leave your money invested and take it when you’re ready. Your pot could grow further and give you a larger amount of money to last for a shorter amount of time. You may also have greater choice in the future if pension providers introduce new products.
+</p>
 
 <h3 class="option option--annuity">Get a guaranteed income (annuity)</h3>
 <p>This is an insurance policy you buy to give you a guaranteed income, normally for the rest of your life or for a fixed number of years. You can take up to 25% of your pot tax free before you buy an annuity. There are different types of annuities and it’s important you buy the right one for you.</p>

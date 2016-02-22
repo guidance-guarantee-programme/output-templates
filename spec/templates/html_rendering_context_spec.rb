@@ -31,17 +31,31 @@ RSpec.describe HTMLRenderingContext do
     subject { context.keywords }
 
     context 'when the data includes a format preference of large_text' do
-      let(:data) { double('Delegatee', format_preference: 'large_text') }
+      let(:data) { double('Delegatee', format_preference: 'large_text', appointment_type: 'standard') }
 
       it { is_expected.to include('large text') }
       it { is_expected.to_not include('standard') }
     end
 
     context 'when the data includes a format preference of standard' do
-      let(:data) { double('Delegatee', format_preference: 'standard') }
+      let(:data) { double('Delegatee', format_preference: 'standard', appointment_type: 'standard') }
 
       it { is_expected.to include('standard') }
       it { is_expected.to_not include('large text') }
+    end
+
+    context 'when the data includes a appointment type of 50-54' do
+      let(:data) { double('Delegatee', appointment_type: '50_54', format_preference: 'standard') }
+
+      it { is_expected.to include('appointment-50-54') }
+      it { is_expected.to_not include('appointment-standard') }
+    end
+
+    context 'when the data includes a appointment type of standard' do
+      let(:data) { double('Delegatee', appointment_type: 'standard', format_preference: 'standard') }
+
+      it { is_expected.to include('appointment-standard') }
+      it { is_expected.to_not include('appointment-50-54') }
     end
   end
 

@@ -34,8 +34,12 @@ module Output
         !large_text?
       end
 
+      def appointment_50_54?
+        type_of_appointment == '50_54'
+      end
+
       def keywords
-        [format]
+        [format, appointment_keyword]
       end
 
       def kind
@@ -50,6 +54,14 @@ module Output
 
       def format
         format_preference.tr('_', ' ')
+      end
+
+      def type_of_appointment
+        appointment_type
+      end
+
+      def appointment_keyword
+        "appointment-#{type_of_appointment.tr('_', '-')}"
       end
 
       def stylesheet_path(base_file_name)
