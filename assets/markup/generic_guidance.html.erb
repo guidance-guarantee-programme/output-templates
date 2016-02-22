@@ -45,10 +45,10 @@
 <h3>Key facts</h3>
 
 <ol class="ordered-list">
-  <li>This is currently the only option which gives you a guaranteed income.</li>
-  <li>You can shop around for an annuity — you don’t have to buy one from your pension provider.</li>
+  <li>This is the only option which gives you a guaranteed income.</li>
+  <li>You can shop around for an annuity – you don’t have to buy one from your current pension provider.</li>
   <li>You can buy an annuity for a fixed term or for the rest of your life.</li>
-  <li>You can take up to 25% of your pot tax free — if you do this, under current pension rules, you must buy an annuity with the remaining 75% within 6 months or use one of the other options.</li>
+  <li>You can take up to 25% of your pot tax free – if you do this you must buy an annuity with the remaining 75% within 6 months or use one of the other options.</li>
   <li>If you’re currently receiving a pension income it’s likely that you’ve already bought an annuity or are taking an income from a final salary or career average (defined benefit) pension.</li>
   <li>There are many different types of annuity and it’s important you get the right one for you.</li>
 </ol>
@@ -60,16 +60,21 @@
 
 <ul class="list list--questions">
   <li>Does my pot have any special features like a guaranteed annuity rate? (see ‘Getting started’)</li>
-  <li>Do I qualify for an enhanced or impaired annuity (you’ll need to tell your provider if you smoke or have a medical condition)?</li>
-  <li>What types of annuity do you offer?</li>
+  <li>Do I qualify for an enhanced or impaired annuity? You’ll need to tell your provider if you smoke or have a medical condition</li>
+  <li>Which types of annuity do you offer?</li>
 </ul>
+
+<% if standard_text? %>
+  <div class="page-break"></div>
+<% end %>
 
 <h4 class="icon icon--website downshift">Go to our website for more guidance on:</h4>
 
 <ul class="list list--arrow">
-  <li>The different types of annuity.</li>
-  <li>Why it’s important to be upfront about your health.</li>
-  <li>Understanding how much tax you may pay on your annuity income.</li>
+  <li>The different types of annuity</li>
+  <li>Why it’s important to be upfront about your health</li>
+  <li>Understanding how much tax you may pay on your annuity income</li>
+  <li>Pension recycling tax laws</li>
 </ul>
 <!-- /option: annuity -->
 
@@ -84,12 +89,14 @@
 
 <ol class="ordered-list">
   <li>Your pot is invested to give you a regular, taxable income. You decide how much to take out and when, and how long you want it to last.</li>
-  <li>You can take up to 25% of your pot tax free — if you do this, under current pension rules you must move the remaining 75% into an adjustable income product within 6 months or use one of the other options.</li>
+  <li>You can take up to 25% of your pot tax free – if you do this, you must move the remaining 75% into an adjustable income product within 6 months or use one of the other options.</li>
   <li>You’re likely to be involved in choosing and managing your investments.</li>
   <li>As with all investments, the value of your pot can go up or down.</li>
-  <li>You can still pay into your pot but there may be restrictions.</li>
+  <li>You can still pay into your pot but there may be restrictions – you need to be aware of ‘pension recycling’ tax laws.</li>
   <li>This option is also known as ‘flexi-access drawdown’.</li>
 </ol>
+
+<p class="emphasise">You can’t take cash in chunks later if you choose this option.</p>
 
 <hr>
 
@@ -104,12 +111,17 @@
   <li>Does my pot have any special features like a guaranteed annuity rate? (see ‘Getting started’)</li>
 </ul>
 
+<% unless large_text? %>
+  <div class="page-break"></div>
+<% end %>
+
 <h4 class="icon icon--website downshift">Go to our website for more guidance on:</h4>
 
 <ul class="list list--arrow">
-  <li>Shopping around for quotes from other providers.</li>
-  <li>Finding out how much tax you would pay on any money you’re planning to take out.</li>
-  <li>Getting financial advice.</li>
+  <li>Shopping around for quotes from other providers</li>
+  <li>Finding out how much tax you would pay on any money you’re planning to take out</li>
+  <li>Getting financial advice</li>
+  <li>Pension recycling tax laws</li>
 </ul>
 <!-- /option: adjustable -->
 
@@ -122,14 +134,14 @@
 <h3>Key facts</h3>
 
 <ol class="ordered-list">
-  <li>Instead of taking your whole pot in one go, you take smaller chunks over time — 25% of each chunk you take out is tax free and the rest is taxable.</li>
+  <li>Instead of taking your whole pot in one go, you take smaller chunks over time. 25% of each chunk you take out is tax free and the rest is taxable.</li>
   <li>The chunks of cash you take get taxed along with any other income you have, eg from work, savings or investments.</li>
   <li>You can spread the chunks out over multiple tax years to reduce your income which could mean you pay less tax.</li>
-  <li>If you have multiple pots, you can take chunks of cash from one and continue to pay into others.</li>
+  <li>If you have more than one pot, you can take chunks of cash from one and continue to pay into others but you need to be aware of ‘pension recycling’ tax laws.</li>
   <li>Providers may describe this option as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS).</li>
 </ol>
 
-<p class="emphasise">If your pot has already been invested into flexi-access drawdown you won’t be able to take any more tax-free cash and cannot use this option.</p>
+<p class="emphasise">If you invest your pot into flexi-access drawdown, you won’t be able to take any more tax-free cash and can’t use this option.</p>
 
 <hr>
 
@@ -137,17 +149,22 @@
 <h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
 
 <ul class="list list--questions">
-  <li>Do you offer Uncrystallised Funds Pension Lump Sum?</li>
+  <li>Do you offer ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS)?</li>
   <li>Will you charge me a fee if I move my pot to a provider that offers this option?</li>
   <li>Does my pot have any special features like a guaranteed annuity rate? (see ‘Getting started’)</li>
 </ul>
 
+<% unless large_text? %>
+  <div class="page-break"></div>
+<% end %>
+
 <h4 class="icon icon--website downshift">Go to our website for more guidance on:</h4>
 
 <ul class="list list--arrow">
-  <li>Shopping around for quotes from other providers.</li>
-  <li>Finding out how much tax you would pay on any money you’re planning to take out.</li>
-  <li>Getting financial advice.</li>
+  <li>Shopping around for quotes from other providers</li>
+  <li>Finding out how much tax you would pay on any money you’re planning to take out</li>
+  <li>Pension recycling tax laws</li>
+  <li>Getting financial advice</li>
 </ul>
 <!-- /option: chunks -->
 
@@ -161,26 +178,38 @@
 
 <ol class="ordered-list">
   <li>If you take your whole pension pot in one go 25% is tax free and the remaining 75% is taxable.</li>
-  <li>The money from your pot gets added to any other income you have over the tax year.</li>
+  <li>The money from your pot will be added to any other income you have over the tax year.</li>
   <li>Adding a large cash sum to your income could mean that you get bumped into a higher tax rate.</li>
+  <li>You can take up to 3 small pots of up to £10,000 without it counting towards your annual or lifetime tax allowance.</li>
   <li>Taking your whole pot in one go could affect your entitlement to benefits.</li>
   <li>Once you’ve taken the money out you can’t change the decision and you lose the tax-free status it had while in your pot.</li>
 </ol>
 
-<p class="emphasise">Unless your pot is £10,000 or less, or you have more than one pot and only want to cash in one of them, you should think about this option carefully.</p>
+<p class="emphasise">You should think about this option carefully unless your pot is £10,000 or less, or you have more than one pot and only want to cash in one of them.</p>
+<p class="emphasise">You need to be aware of ‘pension recycling’ tax laws if you plan to cash in one pot and pay into another. </p>
 
 <hr>
 
 <h3>Next steps</h3>
+<h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
 
-<h4 class="icon icon--website pull">Go to our website for more guidance on:</h4>
+<ul class="list list--questions">
+  <li>Can I take my whole pot in one go?</li>
+  <li>Will you charge me a fee if I move my pot to a provider that offers this option?</li>
+</ul>
+
+<% if standard_text? %>
+  <div class="page-break"></div>
+<% end %>
+
+<h4 class="icon icon--website">Go to our website for more guidance on:</h4>
 
 <ul class="list list--arrow">
-  <li>How much income you’ll need in future years of retirement.</li>
-  <li>How much tax you would pay if you took your whole pot in one go.</li>
-  <li>Speaking to a financial adviser first if you want to reinvest the money.</li>
-  <li>How to avoid a pension scam.</li>
-  <li>Your pension when you die.</li>
+  <li>How much income you’ll need in future years of retirement</li>
+  <li>How much tax you would pay if you took your whole pot in one go</li>
+  <li>Speaking to a financial adviser first if you want to reinvest the money</li>
+  <li>How to avoid a pension scam</li>
+  <li>Your pension when you die</li>
 </ul>
 <!-- /option: whole -->
 
@@ -195,25 +224,27 @@
 <ol class="ordered-list">
   <li>You can mix your options, eg use some of your pot to get an adjustable income and some to buy an annuity.</li>
   <li>Not all providers offer all the options.</li>
-  <li>If you have multiple pots, you can use different options for each pot, eg leave one pot untouched and take cash in chunks from another.</li>
+  <li>If you have more than one pot, you can use different options for each pot, eg leave one untouched and take cash in chunks from another.</li>
 </ol>
 
-<hr>
+<% if standard_text? %>
+  <hr>
+<% end %>
 
 <h3>Next steps</h3>
 <h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
 
 <ul class="list list--questions">
   <li>Which pension options do you offer?</li>
-  <li>Am I able to mix some of the options together?</li>
+  <li>Can I mix some of the options together?</li>
   <li>Will you charge me a fee if I move my pot to a provider that offers the options I want?</li>
 </ul>
 
 <h4 class="icon icon--website downshift">Go to our website for more guidance on:</h4>
 
 <ul class="list list--arrow">
-  <li>All the pension options to see which ones are right for you.</li>
-  <li>Speaking to a financial adviser – mixing different options can be complicated.</li>
-  <li>Shopping around for the best deal – you don’t have to stay with your current provider.</li>
+  <li>All the pension options to see which ones are right for you</li>
+  <li>Speaking to a financial adviser – mixing different options can be complicated</li>
+  <li>Shopping around for the best deal – you don’t have to stay with your current provider</li>
 </ul>
 <!-- /option: mix -->

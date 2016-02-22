@@ -30,6 +30,10 @@ module Output
         format_preference == 'large_text'
       end
 
+      def standard_text?
+        !large_text?
+      end
+
       def keywords
         [format]
       end
