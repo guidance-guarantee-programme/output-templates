@@ -2,18 +2,24 @@
 <div class="page-break"></div>
 
 <h2>Debt and pensions</h2>
-<p>You should think carefully about taking money from your pension pot to pay off debts. Money you take from your pot now could leave you with less to live on in the future.</p>
 
-<p>If you have an arrangement to pay your debts, creditors may be able to access some or all of the pension income or lump sums you take.</p>
+<% if appointment_50_54? %>
+  <p>When you’re able to take money from your pension pot, you should think carefully before using it to pay off any debts or mortgage. Money you take from your pot could leave you with less to live on in the future.</p>
+  <p>If you have an arrangement to pay your debts at the time you take your pension, creditors may be able to access some or all of the pension income or lump sums you take.</p>
+<% else %>
+  <p>You should think carefully about taking money from your pension pot to pay off debts. Money you take from your pot now could leave you with less to live on in the future.</p>
 
-<p>This includes money or income from:</p>
+  <p>If you have an arrangement to pay your debts, creditors may be able to access some or all of the pension income or lump sums you take.</p>
 
-<ul class="list">
-  <li>A guaranteed income (annuity)</li>
-  <li>An adjustable income</li>
-  <li>Cash in chunks</li>
-  <li>Taking your whole pot in one go</li>
-</ul>
+  <p>This includes money or income from:</p>
+
+  <ul class="list">
+    <li>A guaranteed income (annuity)</li>
+    <li>An adjustable income</li>
+    <li>Cash in chunks</li>
+    <li>Taking your whole pot in one go</li>
+  </ul>
+<% end %>
 
 <p class="emphasise">Find out the status of any debt arrangement you have before choosing a pension option.</p>
 
