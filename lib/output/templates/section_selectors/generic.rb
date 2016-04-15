@@ -1,13 +1,12 @@
 module Output
   module Templates
     module SectionSelectors
-      class Base
+      class Generic
         include Output::Templates::SupplementarySectionable
 
         def call(output_document)
           [
             :header,
-            :covering_letter,
             :getting_started,
             :options_overview,
             :generic_guidance,

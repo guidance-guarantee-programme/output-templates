@@ -1,4 +1,8 @@
+require 'output/templates/section_selectors/supplementary_sectionable'
+
 require 'output/templates/section_selectors/base'
+require 'output/templates/section_selectors/generic_naked'
+require 'output/templates/section_selectors/generic'
 require 'output/templates/section_selectors/ineligible'
 
 module Output

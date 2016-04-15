@@ -21,23 +21,25 @@
 
 <hr>
 
-<h3>Next steps</h3>
-<h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
+<div class="next-steps next-steps--leave-pot-untouched">
+  <h3>Next steps</h3>
+  <h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
 
-<ul class="list list--questions">
-  <% if appointment_50_54? %>
-    <li>Have I agreed a retirement age with you? What is it?</li>
-    <li>Will I pay extra fees if I leave my pot untouched when I reach my selected retirement age?</li>
-  <% else %>
-    <li>Do I have to take the money by a certain date?</li>
-    <li>What are the fees for continuing to leave my pot untouched?</li>
-  <% end %>
-  <li>How much is the pot likely to grow or go down each year?</li>
-  <li>How is the money invested and can I change this if I want?</li>
-  <li>How much can I still pay in?</li>
-  <li>Does my pot have any special features like a guaranteed annuity rate? (see ‘Getting started’)</li>
-  <li>Do you have up-to-date details of who I want to leave my pot to (my ‘beneficiary’) when I die?</li>
-</ul>
+  <ul class="list list--questions">
+    <% if appointment_50_54? %>
+      <li>Have I agreed a retirement age with you? What is it?</li>
+      <li>Will I pay extra fees if I leave my pot untouched when I reach my selected retirement age?</li>
+    <% else %>
+      <li>Do I have to take the money by a certain date?</li>
+      <li>What are the fees for continuing to leave my pot untouched?</li>
+    <% end %>
+    <li>How much is the pot likely to grow or go down each year?</li>
+    <li>How is the money invested and can I change this if I want?</li>
+    <li>How much can I still pay in?</li>
+    <li>Does my pot have any special features like a guaranteed annuity rate? (see ‘Getting started’)</li>
+    <li>Do you have up-to-date details of who I want to leave my pot to (my ‘beneficiary’) when I die?</li>
+  </ul>
+</div>
 
 <h4 class="icon icon--website downshift">Go to our website for more guidance on:</h4>
 
@@ -65,14 +67,16 @@
 
 <hr>
 
-<h3>Next steps</h3>
-<h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
+<div class="next-steps next-steps--guaranteed-income">
+  <h3>Next steps</h3>
+  <h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
 
-<ul class="list list--questions">
-  <li>Does my pot have any special features like a guaranteed annuity rate? (see ‘Getting started’)</li>
-  <li>Do I qualify for an enhanced or impaired annuity? You’ll need to tell your provider if you smoke or have a medical condition</li>
-  <li>Which types of annuity do you offer?</li>
-</ul>
+  <ul class="list list--questions">
+    <li>Does my pot have any special features like a guaranteed annuity rate? (see ‘Getting started’)</li>
+    <li>Do I qualify for an enhanced or impaired annuity? You’ll need to tell your provider if you smoke or have a medical condition</li>
+    <li>Which types of annuity do you offer?</li>
+  </ul>
+</div>
 
 <% if standard_text? %>
   <div class="page-break"></div>
@@ -110,16 +114,18 @@
 
 <hr>
 
-<h3>Next steps</h3>
-<h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
+<div class="next-steps next-steps--adjustable-income">
+  <h3>Next steps</h3>
+  <h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
 
-<ul class="list list--questions">
-  <li>Do you offer flexi-access drawdown?</li>
-  <li>Will I have to pay any fees, eg each time I take a payment?</li>
-  <li>How much could my pot grow or go down?</li>
-  <li>Will you charge me a fee if I move my pot to a provider that offers this option?</li>
-  <li>Does my pot have any special features like a guaranteed annuity rate? (see ‘Getting started’)</li>
-</ul>
+  <ul class="list list--questions">
+    <li>Do you offer flexi-access drawdown?</li>
+    <li>Will I have to pay any fees, eg each time I take a payment?</li>
+    <li>How much could my pot grow or go down?</li>
+    <li>Will you charge me a fee if I move my pot to a provider that offers this option?</li>
+    <li>Does my pot have any special features like a guaranteed annuity rate? (see ‘Getting started’)</li>
+  </ul>
+</div>
 
 <% unless large_text? %>
   <div class="page-break"></div>
@@ -155,14 +161,16 @@
 
 <hr>
 
-<h3>Next steps</h3>
-<h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
+<div class="next-steps next-steps--take-cash-in-chunks">
+  <h3>Next steps</h3>
+  <h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
 
-<ul class="list list--questions">
-  <li>Do you offer ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS)?</li>
-  <li>Will you charge me a fee if I move my pot to a provider that offers this option?</li>
-  <li>Does my pot have any special features like a guaranteed annuity rate? (see ‘Getting started’)</li>
-</ul>
+  <ul class="list list--questions">
+    <li>Do you offer ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS)?</li>
+    <li>Will you charge me a fee if I move my pot to a provider that offers this option?</li>
+    <li>Does my pot have any special features like a guaranteed annuity rate? (see ‘Getting started’)</li>
+  </ul>
+</div>
 
 <% unless large_text? %>
   <div class="page-break"></div>
@@ -206,13 +214,15 @@
 
 <hr>
 
+<div class="next-steps next-steps--whole-pot">
 <h3>Next steps</h3>
-<h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
+  <h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
 
-<ul class="list list--questions">
-  <li>Can I take my whole pot in one go?</li>
-  <li>Will you charge me a fee if I move my pot to a provider that offers this option?</li>
-</ul>
+  <ul class="list list--questions">
+    <li>Can I take my whole pot in one go?</li>
+    <li>Will you charge me a fee if I move my pot to a provider that offers this option?</li>
+  </ul>
+</div>
 
 <% if standard_text? %>
   <div class="page-break"></div>
@@ -247,14 +257,16 @@
   <hr>
 <% end %>
 
-<h3>Next steps</h3>
-<h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
+<div class="next-steps next-steps--mix-options">
+  <h3>Next steps</h3>
+  <h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
 
-<ul class="list list--questions">
-  <li>Which pension options do you offer?</li>
-  <li>Can I mix some of the options together?</li>
-  <li>Will you charge me a fee if I move my pot to a provider that offers the options I want?</li>
-</ul>
+  <ul class="list list--questions">
+    <li>Which pension options do you offer?</li>
+    <li>Can I mix some of the options together?</li>
+    <li>Will you charge me a fee if I move my pot to a provider that offers the options I want?</li>
+  </ul>
+</div>
 
 <h4 class="icon icon--website downshift">Go to our website for more guidance on:</h4>
 
