@@ -7,12 +7,13 @@ module Output
     class HTMLRenderingContext < SimpleDelegator
       include ActionView::Helpers::TextHelper
 
-      attr_reader :asset_root
-      private :asset_root
+      attr_reader :asset_root, :template_id
+      private :asset_root, :template_id
 
-      def initialize(data, asset_root: '')
+      def initialize(data, asset_root: '', template_id: '')
         super(data)
         @asset_root = Pathname.new(asset_root)
+        @template_id = template_id
       end
 
       def binding

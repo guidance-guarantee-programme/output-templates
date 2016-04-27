@@ -5,7 +5,7 @@ require 'output/templates/template'
 module Output
   module Templates
     def self.template(id)
-      Template.new(section_selector: SectionSelector.for(id))
+      Template.new(section_selector: SectionSelector.for(id), template_id: id)
     end
   end
 end
