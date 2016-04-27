@@ -12,18 +12,18 @@ module Output
         @asset_root = Pathname.new(asset_root)
       end
 
-      def call(data, sections)
+      def call(data, sections, template_id = '')
         template = Array(sections)
                    .map { |section| template_for(section) }
                    .join("\n\n")
 
-        render(data, template)
+        render(data, template, template_id)
       end
 
       private
 
-      def render(data, template)
-        context = HTMLRenderingContext.new(data, asset_root: asset_root)
+      def render(data, template, template_id)
+        context = HTMLRenderingContext.new(data, asset_root: asset_root, template_id: template_id)
         ERB.new(template).result(context.binding)
       end
 
