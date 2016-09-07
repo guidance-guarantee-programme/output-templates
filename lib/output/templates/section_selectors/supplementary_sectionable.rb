@@ -6,7 +6,7 @@ module Output
         supplementary_debt
         supplementary_ill_health
         supplementary_defined_benefit_pensions
-      )
+      ).freeze
 
       def supplementary_sections(output_document)
         SUPPLEMENTARY_SECTIONS.select { |c| output_document.public_send(c) }

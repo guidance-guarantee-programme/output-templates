@@ -27,7 +27,7 @@ module Fixtures
         appointment_type: 'standard'
       }
     end
-  }
+  }.freeze
 
   private_constant :FIXTURES
 end
