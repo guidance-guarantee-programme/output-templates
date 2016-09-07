@@ -2,7 +2,7 @@ RSpec.describe SectionSelectors::Base do
   SUPPLEMENTARY_SECTIONS = %i(supplementary_benefits
                               supplementary_debt
                               supplementary_ill_health
-                              supplementary_defined_benefit_pensions)
+                              supplementary_defined_benefit_pensions).freeze
 
   describe '#call' do
     let(:output_document) { double('Output Document', supplementary_sections) }

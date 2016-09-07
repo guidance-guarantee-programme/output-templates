@@ -12,7 +12,7 @@ RSpec.describe 'Public API' do
           receive(:for).with(template_name).and_return(section_selector)
 
         allow(Output::Templates::Template).to \
-          receive(:new).with(section_selector: section_selector).and_return(template)
+          receive(:new).with(section_selector: section_selector, template_id: template_name).and_return(template)
       end
 
       it { is_expected.to eq(template) }

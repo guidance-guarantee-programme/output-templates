@@ -6,7 +6,7 @@ module Output
       attr_reader :section_selector, :renderer, :template_id
       protected :section_selector, :renderer, :template_id
 
-      def initialize(section_selector:, renderer: HTMLRenderer.new, template_id:)
+      def initialize(section_selector:, template_id:, renderer: HTMLRenderer.new)
         @renderer = renderer
         @section_selector = section_selector
         @template_id = template_id
