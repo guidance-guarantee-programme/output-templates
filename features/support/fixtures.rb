@@ -20,9 +20,7 @@ module Fixtures
                            'SW1A 2HQ'].join("\n"),
         appointment_date: '5 February 2015',
         guider_first_name: 'Penelope',
-        guider_organisation: 'Citizens Advice',
-        lead: 'You recently had a Pension Wise guidance appointment with Penelope ' \
-              'from Citizens Advice on 5 February 2015.',
+        lead: 'You recently had a Pension Wise guidance appointment with Penelope on 5 February 2015.',
         format_preference: 'standard',
         appointment_type: 'standard'
       }
