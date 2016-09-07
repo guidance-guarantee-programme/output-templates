@@ -285,12 +285,8 @@ hr {
   width: 587px;
 }
 
-.l-letter-yours {
-  margin: 42px 0 28px;
-}
-
 .l-letter-from {
-  margin-bottom: 28px;
+  margin: 42px 0 28px;
 }
 
 .l-letter-img-gov {
@@ -539,7 +535,7 @@ h2 {
 }
 
 @page ineligible-letter {
-  margin: 90px 90px 0;
+  margin: 90px;
 }
 
 @page ineligible-letter:left {
