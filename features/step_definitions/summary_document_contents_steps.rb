@@ -43,5 +43,4 @@ end
 Then(/^the summary document should include the details of the appointment$/) do
   expect(@rendered_template).to have_content(@output_document.appointment_date)
   expect(@rendered_template).to have_content(@output_document.guider_first_name)
-  expect(@rendered_template).to have_content(@output_document.guider_organisation)
 end
