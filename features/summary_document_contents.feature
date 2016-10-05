@@ -25,6 +25,7 @@ Scenario Outline: Supplementary information can be included
     | Debt and pensions                       |
     | Final salary or career average pensions |
     | Pensions and ill health                 |
+    | Pension transfers                       |
 
 Scenario: Summary documents include the information provided to us by the customer
   Given we have captured the customer's details

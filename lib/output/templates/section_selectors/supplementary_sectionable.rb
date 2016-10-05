@@ -6,6 +6,7 @@ module Output
         supplementary_debt
         supplementary_ill_health
         supplementary_defined_benefit_pensions
+        supplementary_pension_transfers
       ).freeze
 
       def supplementary_sections(output_document)

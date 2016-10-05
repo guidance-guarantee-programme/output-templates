@@ -31,6 +31,8 @@ Then(/^it should include supplementary information about "(.*?)"$/) do |topic|
               'ill health'
             when 'Final salary or career average pensions' then
               'defined benefit pensions'
+            when 'Pension transfers' then
+              'pension transfer'
             end
 
   expect(@rendered_template).to include_output_document_section(section)

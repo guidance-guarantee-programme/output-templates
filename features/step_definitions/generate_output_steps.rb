@@ -11,7 +11,8 @@ Given(/^the customer requires supplementary information about "([^"]*)"$/) do |t
     supplementary_benefits: false,
     supplementary_debt: false,
     supplementary_ill_health: false,
-    supplementary_defined_benefit_pensions: false
+    supplementary_defined_benefit_pensions: false,
+    supplementary_pension_transfers: false
   }
 
   supplementary_section = case topic
@@ -23,6 +24,8 @@ Given(/^the customer requires supplementary information about "([^"]*)"$/) do |t
                             :supplementary_ill_health
                           when 'Final salary or career average pensions' then
                             :supplementary_defined_benefit_pensions
+                          when 'Pension transfers' then
+                            :supplementary_pension_transfers
                           end
 
   supplementary_sections[supplementary_section] = true
