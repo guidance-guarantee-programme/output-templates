@@ -22,7 +22,8 @@ module Fixtures
         guider_first_name: 'Penelope',
         lead: 'You recently had a Pension Wise guidance appointment with Penelope on 5 February 2015.',
         format_preference: 'standard',
-        appointment_type: 'standard'
+        appointment_type: 'standard',
+        envelope_class: 'l-envelope--tpas'
       }
     end
   }.freeze
