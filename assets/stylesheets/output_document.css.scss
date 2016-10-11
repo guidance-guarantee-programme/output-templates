@@ -273,6 +273,14 @@ hr {
   left: 397px;
 }
 
+.l-pw-logo-wrapper {
+  overflow: hidden;
+
+  .l-pw-logo-generic {
+    float: right;
+  }
+}
+
 .l-envelope--cab .l-address {
   margin-top: 40px;
 }
