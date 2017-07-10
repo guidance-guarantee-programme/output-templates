@@ -7,3 +7,21 @@ Scenario: Summary documents are sent with a covering letter
   Given a customer has had a Pension Wise appointment
   When we generate a summary document
   Then it should include a covering letter
+
+Scenario: Customer has a Section 32 arrangement pot
+  Given a customer has had a Pension Wise appointment
+  And the customer has a Section 32 arrangement pot
+  When we generate a summary document
+  Then the covering letter should have the Section 32 content
+
+Scenario: Customer taking an adjustable income
+  Given a customer has had a Pension Wise appointment
+  And the customer has an adjustable income
+  When we generate a summary document
+  Then the covering letter should have the adjustable income content
+
+Scenario: Customer has inherited their pension pot
+  Given a customer has had a Pension Wise appointment
+  And the customer has inherited their pension pot
+  When we generate a summary document
+  Then the covering letter should have the inherited pot content
