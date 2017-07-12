@@ -21,6 +21,10 @@ Given(/^the customer has inherited their pension pot$/) do
   @output_document.covering_letter_type = 'inherited_pot'
 end
 
+Given(/^the customer has not customised their covering letter$/) do
+  @output_document.covering_letter_type = ''
+end
+
 Then(/^the covering letter should have the Section 32 content$/) do
   expect(@rendered_template).to have_content('we found that your pension pot may be a ‘Section 32’ arrangement')
 end
@@ -31,4 +35,10 @@ end
 
 Then(/^the covering letter should have the inherited pot content$/) do
   expect(@rendered_template).to have_content('we found you had inherited your pension pot')
+end
+
+Then(/^the covering letter should not have Section 32, adjustable income or inherited pot content$/) do
+  expect(@rendered_template).to_not have_content('we found that your pension pot may be a ‘Section 32’ arrangement')
+  expect(@rendered_template).to_not have_content('we found that you may already be taking an adjustable income')
+  expect(@rendered_template).to_not have_content('we found you had inherited your pension pot')
 end
