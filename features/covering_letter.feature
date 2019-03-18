@@ -26,8 +26,14 @@ Scenario: Customer has inherited their pension pot
   When we generate a summary document
   Then the covering letter should have the inherited pot content
 
+Scenario: Customer has a fixed term annuity
+  Given a customer has had a Pension Wise appointment
+  And the customer has a fixed term annuity
+  When we generate a summary document
+  Then the covering letter should have the fixed term annuity content
+
 Scenario: Customer has no cover letter customisation
   Given a customer has had a Pension Wise appointment
   And the customer has not customised their covering letter
   When we generate a summary document
-  Then the covering letter should not have Section 32, adjustable income or inherited pot content
+  Then the covering letter should not have Section 32, adjustable income, fixed term annuity or inherited pot content
