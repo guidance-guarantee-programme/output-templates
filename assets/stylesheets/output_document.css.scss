@@ -249,6 +249,10 @@ hr {
   background: $color-blue;
   margin-top: 40px;
   margin-bottom: -10px;
+
+  &.guidance {
+    margin-bottom: 40px;
+  }
 }
 
 .l-text-medium {
@@ -581,29 +585,4 @@ h2 {
 
 .summary-document-start {
   counter-reset: page 1
-}
-
-.options-table {
-  table {
-    margin: 1em 0 2em;
-    border-collapse: collapse;
-  }
-
-  th {
-    font-weight: bold;
-    margin: .4em .5em .4em 0;
-    text-align: left;
-    width: 33%;
-  }
-
-  th, td {
-    vertical-align: top;
-  }
-
-  td {
-    padding-bottom: .9em;
-    padding-top: .9em;
-    width: 33%;
-    border-top: 1px solid grey;
-  }
 }
