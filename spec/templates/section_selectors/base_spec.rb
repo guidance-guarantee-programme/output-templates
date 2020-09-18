@@ -23,6 +23,7 @@ RSpec.describe SectionSelectors::Base do
                                generic_guidance
                                inheritance_tax
                                scams
+                               pension_tax_rules
                                #{section}
                                further_guidance
                                footer))
