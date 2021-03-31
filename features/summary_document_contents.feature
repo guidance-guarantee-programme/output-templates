@@ -13,6 +13,7 @@ Scenario: No supplementary information
     | inheritance tax          |
     | scams                    |
     | pension tax rules        |
+    | feedback                 |
     | further guidance         |
 
 Scenario Outline: Supplementary information can be included

@@ -13,6 +13,7 @@ module Output
             :scams,
             :pension_tax_rules,
             supplementary_sections(output_document),
+            :feedback,
             :further_guidance
           ].flatten
         end
