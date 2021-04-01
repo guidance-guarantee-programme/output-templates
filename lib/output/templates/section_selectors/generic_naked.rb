@@ -11,6 +11,7 @@ module Output
             :generic_guidance,
             :inheritance_tax,
             :scams,
+            :pension_tax_rules,
             supplementary_sections(output_document),
             :further_guidance
           ].flatten
