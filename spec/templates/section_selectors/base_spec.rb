@@ -25,6 +25,7 @@ RSpec.describe SectionSelectors::Base do
                                scams
                                pension_tax_rules
                                #{section}
+                               feedback
                                further_guidance
                                footer))
         end
