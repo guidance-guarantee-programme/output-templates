@@ -33,6 +33,8 @@ $color-green: #95c11e;
 $color-lightblue: #5bc5f1;
 $color-red: #e50050;
 
+$color-magenta-primary: #c82a87;
+
 $color-text: $color-black;
 $color-heading: $color-blue;
 $color-link: $color-violet;
@@ -411,14 +413,14 @@ hr {
   li {
     list-style: none;
     position: relative;
-    @include bullet($color-blue, 8px);
+    @include bullet($color-magenta-primary, 8px);
   }
 }
 
 .list--questions,
 .list--arrow {
   font-family: "Roobert-Medium";
-  color: $color-blue;
+  color: $color-magenta-primary;
 }
 
 .list--arrow {
@@ -445,7 +447,7 @@ hr {
     &:before {
       position: absolute;
       content: counter(step-counter) ".";
-      color: $color-blue;
+      color: $color-magenta-primary;
       font-family: "Roobert-Bold";
       margin-left: -40px;
     }
