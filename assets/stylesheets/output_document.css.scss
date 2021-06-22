@@ -457,25 +457,6 @@ hr {
   position: relative;
 }
 
-.option--untouched {
-  @include bullet($color-untouched, 14px);
-}
-.option--annuity {
-  @include bullet($color-annuity, 14px);
-}
-.option--adjustable {
-  @include bullet($color-adjustable, 14px);
-}
-.option--chunks {
-  @include bullet($color-chunks, 14px);
-}
-.option--whole {
-  @include bullet($color-whole, 14px);
-}
-.option--mix {
-  @include bullet($color-mix, 14px);
-}
-
 h2 {
   &.option {
     &:before {
