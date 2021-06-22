@@ -213,14 +213,22 @@ td {
 }
 
 a {
-  font-family: "Roobert-Bold";
-  text-decoration: none;
-  color: $color-link;
+  font-family: "Roobert-Medium";
+  color: $color-magenta-primary;
   line-height: 1;
 
   &.link-letter {
     font-family: "Roobert-Bold";
     color: $color-link-letter;
+  }
+
+  &.expanded {
+    &:after {
+      font-family: "Roobert-Light";
+      content: attr(data-url);
+      color: $color-black;
+      display: block;
+    }
   }
 
   &[href^="mailto"] { color: $color-black; }
