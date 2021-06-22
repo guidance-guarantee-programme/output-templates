@@ -222,6 +222,8 @@ a {
     font-family: "Roobert-Bold";
     color: $color-link-letter;
   }
+
+  &[href^="mailto"] { color: $color-black; }
 }
 
 address {
