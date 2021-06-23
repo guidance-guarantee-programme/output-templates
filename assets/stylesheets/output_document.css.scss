@@ -34,9 +34,10 @@ $color-lightblue: #5bc5f1;
 $color-red: #e50050;
 
 $color-magenta-primary: #c82a87;
+$color-blue-primary: #0f19a0;
 
 $color-text: $color-black;
-$color-heading: $color-blue;
+$color-heading: $color-blue-primary;
 $color-link: $color-violet;
 $color-link-letter: $color-blue;
 $color-appointment-details: $color-blue;
@@ -177,7 +178,7 @@ h4 {
   font-family: "Roobert-Bold";
   font-size: 16pt;
   margin: 20px 0 5px;
-  color: $color-blue;
+  color: $color-blue-primary;
 
   &.pull {
     margin-top: -30px;
