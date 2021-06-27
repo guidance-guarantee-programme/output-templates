@@ -225,11 +225,6 @@ a {
   color: $color-magenta-primary;
   line-height: 1;
 
-  &.link-letter {
-    font-family: "Roobert-Bold";
-    color: $color-link-letter;
-  }
-
   &.expanded {
     &:after {
       font-family: "Roobert-Light";
