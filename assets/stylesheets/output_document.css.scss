@@ -291,6 +291,16 @@ hr {
   .l-pw-logo-generic {
     float: right;
   }
+
+  .l-pw-logo-letter {
+    position: relative;
+  }
+
+  .l-letter-img-mh {
+    position: absolute;
+    top: 10px;
+    right: 15%;
+  }
 }
 
 .l-envelope--cab .l-address {
