@@ -5,6 +5,8 @@ require 'output/templates/section_selectors/generic_naked'
 require 'output/templates/section_selectors/generic'
 require 'output/templates/section_selectors/ineligible'
 
+require 'output/templates/section_selectors/due_diligence'
+
 module Output
   module Templates
     class SectionSelector

@@ -323,6 +323,10 @@ hr {
   width: 587px;
 }
 
+.l-due-diligence-letter-content {
+  width: 500px;
+}
+
 .l-letter-from {
   margin: 42px 0 28px;
 }
@@ -553,6 +557,14 @@ h2 {
 }
 
 @page ineligible-letter {
+  margin: 90px;
+
+  @bottom-right-corner {
+    content: '';
+  }
+}
+
+@page due-diligence-letter {
   margin: 90px;
 
   @bottom-right-corner {
