@@ -1,6 +1,6 @@
 require 'action_view'
 require 'pathname'
-require 'sass'
+require 'sassc'
 
 module Output
   module Templates
@@ -22,7 +22,7 @@ module Output
 
       def stylesheet(base_file_name)
         sass = File.read(stylesheet_path(base_file_name))
-        css = Sass.compile(sass)
+        css  = SassC::Engine.new(sass).render
 
         "<style>\n#{css}\n</style>"
       end
