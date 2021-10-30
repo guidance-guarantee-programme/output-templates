@@ -20,4 +20,4 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 end
 
-include Output::Templates
+include Output::Templates # rubocop:disable Style/MixinUsage

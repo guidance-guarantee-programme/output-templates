@@ -1,9 +1,9 @@
 RSpec.describe SectionSelectors::Base do
-  SUPPLEMENTARY_SECTIONS = %i(supplementary_benefits
+  SUPPLEMENTARY_SECTIONS = %i[supplementary_benefits
                               supplementary_debt
                               supplementary_ill_health
                               supplementary_defined_benefit_pensions
-                              supplementary_pension_transfers).freeze
+                              supplementary_pension_transfers].freeze
 
   describe '#call' do
     let(:output_document) { double('Output Document', supplementary_sections) }
@@ -16,7 +16,7 @@ RSpec.describe SectionSelectors::Base do
         before { supplementary_sections[section] = true }
 
         it do
-          is_expected.to eq(%I(header
+          is_expected.to eq(%I[header
                                covering_letter
                                getting_started
                                options_overview
@@ -27,7 +27,7 @@ RSpec.describe SectionSelectors::Base do
                                #{section}
                                feedback
                                further_guidance
-                               footer))
+                               footer])
         end
       end
     end
