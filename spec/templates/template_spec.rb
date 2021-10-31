@@ -2,7 +2,7 @@ RSpec.describe Template do
   describe '#render' do
     let(:output_document) { double('Output Document').as_null_object }
     let(:rendered_output) { 'rendered output' }
-    let(:pages) { %i(page_one page_two) }
+    let(:pages) { %i[page_one page_two] }
     let(:section_selector) { double('Section Selector') }
     let(:renderer) { instance_double(Output::Templates::HTMLRenderer) }
     let(:template_name) { 'my-template' }

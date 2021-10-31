@@ -23,15 +23,15 @@ end
 
 Then(/^it should include supplementary information about "(.*?)"$/) do |topic|
   section = case topic
-            when 'Benefits and pension income' then
+            when 'Benefits and pension income'
               'benefits'
-            when 'Debt and pensions' then
+            when 'Debt and pensions'
               'debt'
-            when 'Pensions and ill health' then
+            when 'Pensions and ill health'
               'ill health'
-            when 'Final salary or career average pensions' then
+            when 'Final salary or career average pensions'
               'defined benefit pensions'
-            when 'Pension transfers' then
+            when 'Pension transfers'
               'pension transfer'
             end
 

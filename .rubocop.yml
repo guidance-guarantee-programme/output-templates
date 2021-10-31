@@ -1,13 +1,17 @@
 AllCops:
+  NewCops: disable
   Exclude:
     - 'bin/*'
-  TargetRubyVersion: 2.3
+    - 'vendor/**/*'
+  TargetRubyVersion: 2.7
 
-Documentation:
+Style/Documentation:
   Enabled: false
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 120
+  Exclude:
+    - features/**/*
 
 Metrics/MethodLength:
   Max: 15
@@ -17,3 +21,8 @@ Style/RescueModifier:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+    - features/**/*

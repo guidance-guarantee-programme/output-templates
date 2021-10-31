@@ -16,15 +16,15 @@ Given(/^the customer requires supplementary information about "([^"]*)"$/) do |t
   }
 
   supplementary_section = case topic
-                          when 'Benefits and pension income' then
+                          when 'Benefits and pension income'
                             :supplementary_benefits
-                          when 'Debt and pensions' then
+                          when 'Debt and pensions'
                             :supplementary_debt
-                          when 'Pensions and ill health' then
+                          when 'Pensions and ill health'
                             :supplementary_ill_health
-                          when 'Final salary or career average pensions' then
+                          when 'Final salary or career average pensions'
                             :supplementary_defined_benefit_pensions
-                          when 'Pension transfers' then
+                          when 'Pension transfers'
                             :supplementary_pension_transfers
                           end
 

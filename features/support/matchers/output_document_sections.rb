@@ -58,7 +58,7 @@ module OutputDocumentSectionsMatchers
         @rendered_template.to_s =~ section_match_expression(section)
       end
 
-      !section_indexes.any?(&:nil?) && section_indexes.sort == section_indexes
+      section_indexes.none?(&:nil?) && section_indexes.sort == section_indexes
     end
 
     failure_message do
