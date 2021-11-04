@@ -3,7 +3,7 @@ module Output
     module SectionSelectors
       class DueDiligence
         def call(*)
-          %i(due_diligence_contents)
+          %i[due_diligence_contents]
         end
       end
     end
