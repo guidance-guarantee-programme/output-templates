@@ -1,5 +1,5 @@
 module Output
   module Templates
-    VERSION = '6.5.1'.freeze
+    VERSION = '6.6.0'.freeze
   end
 end
