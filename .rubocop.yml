@@ -1,9 +1,11 @@
+inherit_from: .rubocop_todo.yml
+
 AllCops:
   NewCops: disable
   Exclude:
     - 'bin/*'
     - 'vendor/**/*'
-  TargetRubyVersion: 2.7
+  TargetRubyVersion: 3.0
 
 Style/Documentation:
   Enabled: false
