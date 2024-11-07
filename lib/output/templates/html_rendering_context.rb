@@ -8,7 +8,6 @@ module Output
       include ActionView::Helpers::TextHelper
 
       attr_reader :asset_root, :template_id
-      private :asset_root, :template_id
 
       def initialize(data, asset_root: '', template_id: '')
         super(data)
