@@ -4,7 +4,6 @@ module Output
   module Templates
     class Template
       attr_reader :section_selector, :renderer, :template_id
-      protected :section_selector, :renderer, :template_id
 
       def initialize(section_selector:, template_id:, renderer: HTMLRenderer.new)
         @renderer = renderer
@@ -16,6 +15,8 @@ module Output
         pages = section_selector.call(output_document)
         renderer.call(output_document, pages, template_id)
       end
+
+      :section_selector
     end
   end
 end
