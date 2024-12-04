@@ -46,3 +46,15 @@ Then(/^the summary document should include the details of the appointment$/) do
   expect(@rendered_template).to have_content(@output_document.appointment_date)
   expect(@rendered_template).to have_content(@output_document.guider_first_name)
 end
+
+Then(/^the summary document does not include the Pension Wise Digital URN$/) do
+  expect(@rendered_template).not_to have_content('Your Pension Wise reference:')
+end
+
+Given(/^we have captured appointment details with a URN$/) do
+  @output_document = fixture(:output_document, urn: 'PWD1-2ABC')
+end
+
+Then(/^the summary document includes the Pension Wise Digital URN$/) do
+  expect(@rendered_template).to have_content('Your Pension Wise reference: PWD1-2ABC')
+end
