@@ -10,6 +10,10 @@
 <!-- section: getting started -->
 <h2>Getting started</h2>
 
+<% if defined?(urn) && urn.present? %>
+<p class="summary t-urn">Your Pension Wise reference: <strong><%= urn %></strong></p>
+<% end %>
+
 <p class="summary">This is a summary of your defined contribution pension options. This is your personal or workplace pension and is based on how much has been paid into your pot.</p>
 
 <p class="emphasise">This is not a final salary or career average pension.</p>

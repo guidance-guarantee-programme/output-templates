@@ -38,3 +38,9 @@ Scenario: Summary documents include information about the appointment
   Given we have captured appointment details
   When we generate a summary document
   Then the summary document should include the details of the appointment
+  And the summary document does not include the Pension Wise Digital URN
+
+Scenario: Pension Wise Digital Summary includes the URN
+  Given we have captured appointment details with a URN
+  When we generate a summary document
+  Then the summary document includes the Pension Wise Digital URN
