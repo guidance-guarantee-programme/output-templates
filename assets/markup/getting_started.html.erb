@@ -7,9 +7,29 @@
   </div>
 <% end %>
 
+<h2>Next steps</h2>
+
+<% case covering_letter_type
+   when 'section_32' %>
+ <h3 class="option">Ask your pension provider if you have a Section 32 arrangement</h3>
+ <p>A Section 32 arrangement might limit your options for taking your pension or transferring it to a different provider. For example, you may not be able to take any tax-free cash.</p>
+ <p>You might also have to wait until a set retirement date before you can take your money. Ask your pension provider to explain any restrictions that apply to you.</p>
+<% when 'adjustable_income' %>
+  <h3 class="option">Check if you’re receiving income from a drawdown arrangement</h3>
+  <p>If you’re already receiving income from a drawdown arrangement, you might be unable to use some of the pension options we talked about. Ask your provider to explain any restrictions that apply to you.</p>
+<% when 'inherited_pot' %>
+  <h3 class="option">Inherited pension pots might have different options</h3>
+  <p>As you inherited your pension pot, you might not be able to use some of the options we talked about. Ask your pension provider to explain which options apply to you.</p>
+  <p>The amount of tax you’ll usually pay will also be different to the information provided. Find out more at: <a href="https://www.gov.uk/tax-on-pension-death-benefits" target="_blank">gov.uk/tax-on-pension-death-benefits</a>.</p>
+<% when 'fixed_term_annuity' %>
+  <h3 class="option">Contact your fixed-term annuity provider</h3>
+  <p>As you have a fixed-term annuity, you’ll receive a maturity amount when it ends. You cannot take any tax-free cash from this amount, so this limits your options for taking this pension.</p>
+  <p>You can choose to use the maturity amount to buy another annuity or put the money into a pension drawdown product, so you can take income as and when you need it.</p>
+  <p>Ask your pension provider for full details and to explain any restrictions that apply to you.</p>
+<% end %>
+
 <% if next_steps? %>
   <!-- section: next steps -->
-  <h2>Next steps</h2>
   <% if updated_beneficiaries? %>
     <h3 class="option">Update your beneficiary</h3>
     <p>Check your provider knows who you’d like to inherit your pension – your beneficiaries. To find out what happens to your pension after you die, go to: <a href="https://www.moneyhelper.org.uk/pensions-after-you-die" target="_blank">moneyhelper.org.uk/pensions-after-you-die</a>.</p>
