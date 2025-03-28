@@ -24,7 +24,9 @@ module Fixtures
         lead: 'You recently had a Pension Wise guidance appointment with Penelope on 5 February 2015.',
         format_preference: 'standard',
         appointment_type: 'standard',
-        envelope_class: 'l-envelope--tpas'
+        envelope_class: 'l-envelope--tpas',
+        reference_number: '123456',
+        next_steps?: false
       }
     end
   }.freeze

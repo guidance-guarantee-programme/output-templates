@@ -7,29 +7,22 @@
     <%= simple_format(attendee_address) %>
   </address>
 
+  <% if defined?(reference_number) && reference_number.present? %>
+    <p class="l-letter-to">Booking reference number: <%= reference_number %></p>
+  <% end %>
+
   <p class="l-letter-to">Dear <%= attendee_name %>,</p>
 
   <p class="letter-intro"><%= lead %></p>
 
   <div class="l-letter-content">
-    <p>This document is a summary of the pension options discussed in your appointment. You’ll find key facts and next steps you can take to help you make a decision.</p>
-
-    <p>
-      <% case covering_letter_type
-         when 'section_32' %>
-        During the appointment we found that your pension pot may be a ‘Section 32’ arrangement. This could limit your options for taking your pension pot, eg you may not be able to take any tax-free cash. It could also limit your ability to transfer your pension to another pension provider or to take your pot earlier than the retirement date selected. Contact your current provider for more details.
-      <% when 'adjustable_income' %>
-        During the appointment we found that you may already be taking an adjustable income (receiving income from a drawdown arrangement). This could mean you’re unable to use some of the pension options discussed. Contact your provider for more details.
-      <% when 'inherited_pot' %>
-        During the appointment we found you had inherited your pension pot. This could mean you’re unable to use some of the pension options discussed. The amount you pay in tax will be different from the information given under each option. For more information go to <a target="_blank" rel="external" href="https://www.gov.uk/tax-on-pension-death-benefits">www.gov.uk/tax-on-pension-death-benefits</a> or you can contact your provider for more details.
-      <% when 'fixed_term_annuity' %>
-        During the appointment we found that you have a fixed term annuity which will provide you with a maturity amount at the end of its term. This will limit the options you have for taking this pension pot, as you will not be able to take any tax-free cash from this amount. You will be able to use the maturity amount to buy another annuity or place the funds into a pension drawdown product. Contact your current provider for more details.
-      <% end %>
-    </p>
+    <% if next_steps? %>
+      <p>You’ll find the next steps we discussed on page 1. We’ve also included a summary of the options for taking money from your defined contribution pension.</p>
+    <% else %>
+      <p>Here is a summary of the options for taking money from your defined contribution pension.</p>
+    <% end %>
 
     <p>Pension Wise is an impartial government service. We don’t recommend any products or tell you what to do with your money.</p>
-
-    <p>Take your time and consider speaking to a regulated financial adviser to help you. You can now take money from your pot tax free to get financial advice on your pension. You may be able to use money tax-free from your pension pot to pay for financial advice. Check with your provider and adviser.</p>
   </div>
 
   <p class="emphasize l-letter-from">Pension Wise</p>

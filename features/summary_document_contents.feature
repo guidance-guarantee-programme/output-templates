@@ -34,6 +34,16 @@ Scenario: Summary documents include the information provided to us by the custom
   When we generate a summary document
   Then the summary document should include their details
 
+Scenario: Summary documents include no additional next steps when unspecified
+  Given a customer doesn't require any additional next steps
+  When we generate a summary document
+  Then the summary document does not include any additional next steps
+
+Scenario: Summary documents include additional next steps when specified
+  Given a customer requires additional next steps
+  When we generate a summary document
+  Then the summary document includes the additional next steps
+
 Scenario: Summary documents include information about the appointment
   Given we have captured appointment details
   When we generate a summary document
