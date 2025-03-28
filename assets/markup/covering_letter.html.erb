@@ -12,7 +12,11 @@
   <p class="letter-intro"><%= lead %></p>
 
   <div class="l-letter-content">
-    <p>This document is a summary of the pension options discussed in your appointment. You’ll find key facts and next steps you can take to help you make a decision.</p>
+    <% if next_steps? %>
+      <p>You’ll find the next steps we discussed on page 1. We’ve also included a summary of the options for taking money from your defined contribution pension.</p>
+    <% else %>
+      <p>Here is a summary of the options for taking money from your defined contribution pension.</p>
+    <% end %>
 
     <p>
       <% case covering_letter_type
@@ -28,8 +32,6 @@
     </p>
 
     <p>Pension Wise is an impartial government service. We don’t recommend any products or tell you what to do with your money.</p>
-
-    <p>Take your time and consider speaking to a regulated financial adviser to help you. You can now take money from your pot tax free to get financial advice on your pension. You may be able to use money tax-free from your pension pot to pay for financial advice. Check with your provider and adviser.</p>
   </div>
 
   <p class="emphasize l-letter-from">Pension Wise</p>
