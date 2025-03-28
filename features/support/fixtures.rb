@@ -25,6 +25,7 @@ module Fixtures
         format_preference: 'standard',
         appointment_type: 'standard',
         envelope_class: 'l-envelope--tpas',
+        reference_number: '123456',
         next_steps?: false
       }
     end

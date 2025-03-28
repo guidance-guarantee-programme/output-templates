@@ -7,6 +7,10 @@
     <%= simple_format(attendee_address) %>
   </address>
 
+  <% if defined?(reference_number) && reference_number.present? %>
+    <p class="l-letter-to">Booking reference number: <%= reference_number %></p>
+  <% end %>
+
   <p class="l-letter-to">Dear <%= attendee_name %>,</p>
 
   <p class="letter-intro"><%= lead %></p>
