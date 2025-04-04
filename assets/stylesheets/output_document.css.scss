@@ -248,6 +248,14 @@ ul, ol {
 
   li {
     margin-bottom: 18px;
+
+    &.ineligible {
+      margin-bottom: 10px;
+    }
+  }
+
+  li li {
+    margin-left: 20px;
   }
 }
 
@@ -316,7 +324,7 @@ hr {
 }
 
 .l-letter-to {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .l-letter-content {
@@ -433,8 +441,8 @@ hr {
   font-family: "Roobert-Bold";
   font-size: 23px;
   color: $color-heading;
-  line-height: 1.15;
-  margin-bottom: 42px;
+  line-height: 1.1;
+  margin-bottom: 20px;
   width: 587px;
 }
 
