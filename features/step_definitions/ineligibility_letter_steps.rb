@@ -7,4 +7,5 @@ Then(/^the output should be an ineligibility letter$/) do
   expect(@rendered_template).to have_content(@output_document.attendee_address)
   expect(@rendered_template).to have_content(@output_document.attendee_name)
   expect(@rendered_template).to have_content(@output_document.lead)
+  expect(@rendered_template).to have_content("Booking reference number: #{@output_document.reference_number}")
 end

@@ -7,39 +7,41 @@
     <%= simple_format(attendee_address) %>
   </address>
 
+  <% if defined?(reference_number) && reference_number.present? %>
+    <p class="l-letter-to">Booking reference number: <%= reference_number %></p>
+  <% end %>
+
   <p class="l-letter-to">Dear <%= attendee_name %>,</p>
 
   <p class="letter-intro"><%= lead %></p>
 
   <div class="l-letter-content">
-    <p>In the appointment we found out you were not eligible for a Pension Wise appointment.</p>
+    <p>We were unable to complete the appointment as you are not eligible. This is usually because you do not have a UK-based defined contribution pension – you can see the eligibility criteria at <a target="_blank" href="https://www.moneyhelper.org.uk/pension-wise">moneyhelper.org.uk/pension-wise</a>.</p>
 
-    <p>Pension Wise only provides guidance on the options you have for taking your defined contribution pension. We apologise if this wasn’t made clear before the appointment.</p>
+    <p>For help with your pension, you can:</p>
+    <ul>
+      <li class="ineligible">use our free pension guides and tools on moneyhelper.org.uk</li>
+      <li class="ineligible">get free pensions guidance by phone, webchat or email:
+        <ul style="margin-top: 10px">
+          <li class="ineligible">go to <a href="https://www.moneyhelper.org.uk/pensions-contact-us" target="_blank">moneyhelper.org.uk/pensions-contact-us</a></li>
+          <li class="ineligible">call <strong>0800 011 3797</strong> (<strong>+44 207 932 5780</strong> if you’re outside the UK).</li>
+        </ul>
+      </li>
+    </ul>
 
-    <p>You can get free and impartial help from the MoneyHelper Pensions Guidance helpline – go to <a target="_blank" href="https://www.moneyhelper.org.uk">moneyhelper.org.uk</a> or phone <strong>0800 011 3797</strong> (<strong>+44 207 932 5780</strong> from outside the UK).</p>
-
-    <% if large_text? %>
-      <div class="page-break"></div>
-    <% end %>
-
-    <p>Most people are eligible for the State Pension from the government. Phone <strong>0800 731 0175</strong> (<strong>+44 (0)191 218 7777</strong> from outside the UK) to apply for a State Pension statement to find out how much you may get.</p>
-
-    <p class="emphasize l-letter-from">Pension Wise</p>
+    <p>We’re open Monday to Friday, 9am to 5pm. Closed on bank holidays.</p>
 
     <div class="page-break"></div>
 
-    <h3>What’s MoneyHelper?</h3>
+    <p>For help with your State Pension:</p>
+    <ul>
+      <li class="ineligible">go to <a href="https://www.gov.uk/check-state-pension" target="_blank">gov.uk/check-state-pension</a></li>
+      <li class="ineligible">call <strong>0800 731 0175</strong> (<strong>+44 191 218 7777</strong> if you’re outside the UK).</li>
+    </ul>
 
-    <p>MoneyHelper is a government backed organisation that provides free and impartial guidance on your money and pensions. Our service is designed to support you in making your own informed decisions based on your circumstances. Further information can be found at <a target="_blank" href="https://www.moneyhelper.org.uk/about-us">moneyhelper.org.uk/about-us</a>.</p>
+    <p>Lines are open Monday to Friday, 8am to 6pm. Closed on bank holidays. Go to <a href="https://www.gov.uk/future-pension-centre" target="_blank">gov.uk/future-pension-centre</a> for more contact options.</p>
 
-    <p>We don’t give legal or regulated financial advice or recommend specific financial products because we aren’t regulated or authorised by the Financial Conduct Authority to do so. This means we can’t tell you what the best option is for you, or what to do with your money or pension. If you’re looking for personalised money or pensions advice or specific product recommendations, you’ll need to see a regulated financial adviser or seek legal advice.</p>
-
-    <p>Find out more about when and how to get professional advice in our guide ‘Do you need a financial adviser’ <a target="_blank" href="https://www.moneyhelper.org.uk/en/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser">moneyhelper.org.uk/en/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser</a>.</p>
-
-    <p>If you need legal advice, you can find a solicitor on the Law Society website <a target="_blank" rel="external" href="https://www.lawsociety.org.uk">lawsociety.org.uk</a>.</p>
-
-    <p>Look out for pension scams. If an individual or company contacts you and promises great returns from a defined contribution pot or says it’s a great opportunity to free up cash, it’s probably a scam. Go to our website for more guidance on how to spot the signs of a pension scam:</p>
-
-    <p><a target="_blank" href="https://www.moneyhelper.org.uk/en/money-troubles/scams/how-to-spot-a-pension-scam">moneyhelper.org.uk/en/money-troubles/scams/how-to-spot-a-pension-scam</a></p>
+    <p class="emphasize l-letter-from">Pension Wise</p>
   </div>
 </div>
+</html>
