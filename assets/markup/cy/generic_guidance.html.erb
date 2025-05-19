@@ -2,47 +2,49 @@
 
 <!-- option: untouched -->
 <div class="page-break"></div>
-<h2 class="option">1. Retire later or delay taking your pension pot</h2>
+<h2 class="option">1. Ymddeol yn hwyrach neu oedi cymryd eich cronfa bensiwn</h2>
 
-<h3>Key facts</h3>
+<h3>Ffeithiau allweddol</h3>
 
 <ol class="ordered-list">
-  <li>While the money stays in your pot you don’t pay tax on it.</li>
-  <li>It’s up to you when you take the money out – the earliest is usually aged 55, unless you have a serious illness. The earliest age you can access your pension pot is increasing to age 57 on 6 April 2028.</li>
-  <li>If someone contacts you unexpectedly about getting money out of your pot before you’re 55, it’s nearly always a pension scam.</li>
+  <li>Tra bod yr arian yn aros yn eich cronfa nid ydych yn talu treth arno.</li>
+  <li>Chi sydd i benderfynu pryd y cymerwch yr arian – y cynharaf fel arfer yw 55 oed, oni bai bod gennych salwch difrifol. Mae’r oedran cynharaf y gallwch gael mynediad i’ch cronfa bensiwn yn cynyddu i 57 oed ar 6 Ebrill 2028.</li>
+  <li>Os bydd rhywun yn cysylltu â chi’n annisgwyl ynghylch cael arian allan o’ch cronfa cyn eich bod yn 55 oed, mae bron bob amser yn sgam pensiwn.</li>
   <% if appointment_50_54? %>
     <!-- section: warning about leaving pot beyond selected retirement age -->
-    <li>You may still be able to pay into your pot but you could be charged for leaving your pot beyond your ‘selected retirement age’ – the age you agreed to retire with your provider.</li>
+    <li>Mae’n bosibl y byddwch yn dal i allu talu i mewn i’ch cronfa ond efallai y codir tâl arnoch am adael eich cronfa y tu hwnt i’ch ‘oedran ymddeol a ddewiswyd’ – yr oedran y gwnaethoch gytuno i ymddeol gyda’ch darparwr.</li>
   <% else %>
+    <!-- TODO -->
     <li>You can also still pay into your pot but there may be restrictions. If you’re an employee your employer might continue to make contributions too.</li>
   <% end %>
-  <li>Money left in your pot can be passed on when you die.</li>
+  <li>Gellir trosglwyddo arian sy'n weddill yn eich cronfa pan fyddwch yn marw.</li>
 </ol>
 
 <hr>
 
 <div class="next-steps next-steps--leave-pot-untouched">
-  <h3>Next steps</h3>
-  <h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
+  <h3>Camau nesaf</h3>
+  <h4 class="pull icon icon--questions">Cwestiynau i'w gofyn i'ch darparwr:</h4>
 
   <ul class="list list--questions">
     <% if appointment_50_54? %>
-      <li>Have I agreed a retirement age with you? What is it?</li>
+      <li>Ydw i wedi cytuno ar oedran ymddeol gyda chi? Beth yw e?</li>
     <% else %>
+      <!-- TODO -->
       <li>Do I have to take the money by a certain date?</li>
     <% end %>
-    <li>What are the fees for delaying taking my pension pot?</li>
-    <li>How is the money invested and can I change this if I want?</li>
-    <li>How much can I still pay in?</li>
-    <li>Does my pot have any special features like a guaranteed annuity rate?</li>
-    <li>Do you have up-to-date details of who I want to leave my pot to (my ‘beneficiary’) when I die?</li>
+    <li>Beth yw'r ffioedd ar gyfer gohirio cymryd fy nghronfa bensiwn?</li>
+    <li>Sut mae'r arian yn cael ei fuddsoddi ac a allaf newid hyn os ydw i eisiau?</li>
+    <li>Faint y gallaf ei dalu i mewn o hyd?</li>
+    <li>A oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?</li>
+    <li>A oes gennych y manylion diweddaraf am bwy yr wyf am adael fy nghronfa iddynt (fy ‘muddiolwr’) pan fyddaf yn marw?</li>
   </ul>
 </div>
 
-<h4 class="icon icon--website downshift">Go to our website for more guidance on:</h4>
+<h4 class="icon icon--website downshift">Ewch i'n gwefan am ragor o arweiniad ar:</h4>
 
 <ul class="list list--arrow">
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/retiring-later-or-delaying-taking-your-pension-pot" class="expanded" data-url="moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/retiring-later-or-delaying-taking-your-pension-pot">Retiring later or delaying taking your pension pot</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/retiring-later-or-delaying-taking-your-pension-pot" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/retiring-later-or-delaying-taking-your-pension-pot">Ymddeol yn hwyrach neu ohirio cymryd eich cronfa bensiwn</a></li>
 </ul>
 <!-- /option: untouched -->
 
@@ -50,29 +52,29 @@
 
 <!-- option: annuity -->
 <div class="page-break"></div>
-<h2 class="option">2. Get a guaranteed retirement income (annuity)</h2>
+<h2 class="option">2. Cael incwm ymddeol gwarantedig (blwydd-dal)</h2>
 
-<h3>Key facts</h3>
+<h3>Ffeithiau allweddol</h3>
 
 <ol class="ordered-list">
-  <li>This is a type of insurance product which gives you a guaranteed income.</li>
-  <li>You can shop around for an annuity – you don’t have to buy one from your current pension provider.</li>
-  <li>You can buy an annuity for a fixed term or for the rest of your life.</li>
-  <li>You can normally take up to 25% of your pot tax free – if you do this you must buy an annuity with the remaining 75% or use one of the other options.</li>
-  <li>If you’re currently receiving a pension income it’s likely that you’ve already bought an annuity or are taking an income from a final salary or career average (defined benefit) pension.</li>
-  <li>There are many different types of annuity and it’s important you get the right one for you.</li>
+  <li>Mae hwn yn fath o gynnyrch yswiriant sy'n rhoi incwm gwarantedig i chi.</li>
+  <li>Gallwch siopa o gwmpas am flwydd-dal – nid oes rhaid i chi brynu un gan eich darparwr pensiwn presennol.</li>
+  <li>Gallwch brynu blwydd-dal am gyfnod penodol neu weddill eich oes.</li>
+  <li>Fel arfer gallwch gymryd hyd at 25% o'ch cronfa yn ddi-dreth – os gwnewch hyn rhaid i chi brynu blwydd-dal gyda'r 75% sy'n weddill neu ddefnyddio un o'r opsiynau eraill.</li>
+  <li>Os ydych yn derbyn incwm pensiwn ar hyn o bryd mae’n debygol eich bod eisoes wedi prynu blwydd-dal neu’n cymryd incwm o bensiwn cyflog terfynol neu gyfartaledd gyrfa (buddion wedi’u diffinio).</li>
+  <li>Mae llawer o wahanol fathau o flwydd-daliadau ac mae'n bwysig eich bod yn cael yr un iawn i chi.</li>
 </ol>
 
 <hr>
 
 <div class="next-steps next-steps--guaranteed-income">
-  <h3>Next steps</h3>
-  <h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
+  <h3>Camau nesaf</h3>
+  <h4 class="pull icon icon--questions">Cwestiynau i'w gofyn i'ch darparwr:</h4>
 
   <ul class="list list--questions">
-    <li>Does my pot have any special features like a guaranteed annuity rate?</li>
-    <li>Do I qualify for an enhanced or impaired annuity? You’ll need to tell your provider if you smoke or have a medical condition</li>
-    <li>Which types of annuity do you offer?</li>
+    <li>A oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?</li>
+    <li>Ydw i'n gymwys i gael blwydd-dal uwch neu amhariad? Bydd angen i chi ddweud wrth eich darparwr os ydych yn ysmygu neu os oes gennych gyflwr meddygol</li>
+    <li>Pa fathau o flwydd-dal ydych chi'n eu cynnig?</li>
   </ul>
 </div>
 
@@ -80,14 +82,14 @@
   <div class="page-break"></div>
 <% end %>
 
-<h4 class="icon icon--website downshift">Go to our website for more guidance on:</h4>
+<h4 class="icon icon--website downshift">Ewch i'n gwefan am ragor o arweiniad ar:</h4>
 
 <ul class="list list--arrow">
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#types-of-annuity" class="expanded" data-url="moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#types-of-annuity">The different types of annuity</a></li>
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#enhanced-annuities" class="expanded" data-url="moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#enhanced-annuities">Why it’s important to be upfront about your health</a></li>
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions" class="expanded" data-url="moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions">Understanding how much tax you may pay on your annuity income</a></li>
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#can-you-continue-contributing-to-a-pension-if-you-purchase-an-annuity" class="expanded" data-url="moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#can-you-continue-contributing-to-a-pension-if-you-purchase-an-annuity">Pension recycling tax laws</a></li>
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/compare-annuities" class="expanded" data-url="moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/compare-annuities">Shop around for annuities using our online tool, to help you get the best deal</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#types-of-annuity" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#types-of-annuity">Y gwahanol fathau o flwydd-dal</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#enhanced-annuities" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#enhanced-annuities">Pam ei bod yn bwysig bod yn onest am eich iechyd</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions">Deall faint o dreth y gallwch ei thalu ar eich incwm blwydd-dal</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#can-you-continue-contributing-to-a-pension-if-you-purchase-an-annuity" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#can-you-continue-contributing-to-a-pension-if-you-purchase-an-annuity">Deddfau treth ailgylchu pensiynau</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/compare-annuities" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/compare-annuities">Siopwch o gwmpas am flwydd-daliadau gan ddefnyddio ein teclyn ar-lein, i'ch helpu i gael y fargen orau</a></li>
 </ul>
 <!-- /option: annuity -->
 
@@ -96,42 +98,42 @@
 
 <!-- option: adjustable -->
 <div class="page-break"></div>
-<h2 class="option">3. Get a flexible retirement income (pension drawdown)</h2>
+<h2 class="option">3. Cael incwm ymddeoliad hyblyg (tynnu pensiwn i lawr)</h2>
 
-<h3>Key facts</h3>
+<h3>Ffeithiau allweddol</h3>
 
 <ol class="ordered-list">
-  <li>You get an income from your pot which is taxable. You decide how much to take out and when, and how long you want it to last. This option is known as ‘pension drawdown’.</li>
-  <li>You move your pot to a pension drawdown product, then you can normally take up to 25% of your pot tax free and the remaining funds are invested. You can decide how much and how often you want to draw money from the pot.</li>
-  <li>Your provider will ask you how you want to invest your remaining pot when you move into pension drawdown. You will either need to choose your own investments, i.e. ones that match your attitude to risk and objectives for your money, or some providers will offer you to choose from simple ready-made investment options which are linked to your retirement plans (these are called Investment Pathways). You could also use a financial adviser to help you choose.</li>
-  <li>An investment pathway is a ready-made investment option, which simplifies the decision of how to invest your remaining pension pot after you’ve taken your tax-free lump sum.</li>
-  <li>As with all investments, the value of your pot can go up or down.</li>
-  <li>You may be able to keep paying into another pension after you take money out, but you could pay a tax charge on contributions over £10,000 a year (known as the ‘money purchase annual allowance’).</li>
+  <li>Byddwch yn cael incwm o'ch cronfa sy'n drethadwy. Chi sy'n penderfynu faint i'w dynnu allan a phryd, a pha mor hir rydych chi am iddo bara. Gelwir yr opsiwn hwn yn ‘dynnu pensiwn i lawr’.</li>
+  <li>Rydych yn symud eich cronfa i gynnyrch tynnu pensiwn i lawr, yna fel arfer gallwch gymryd hyd at 25% o'ch cronfa yn ddi-dreth ac mae'r arian sy'n weddill yn cael ei fuddsoddi. Gallwch chi benderfynu faint a pha mor aml rydych chi am dynnu arian o'r gronfa.</li>
+  <li>Bydd eich darparwr yn gofyn i chi sut yr hoffech fuddsoddi'ch cronfa sy'n weddill pan fyddwch yn symud i mewn i dynnu pensiwn i lawr. Bydd angen i chi naill ai ddewis eich buddsoddiadau eich hun, h.y. rhai sy’n cyd-fynd â’ch agwedd at risg ac amcanion ar gyfer eich arian, neu bydd rhai darparwyr yn cynnig i chi ddewis o opsiynau buddsoddi parod syml sy’n gysylltiedig â’ch cynlluniau ymddeol (gelwir y rhain yn Llwybrau Buddsoddi). Gallech hefyd ddefnyddio cynghorydd ariannol i'ch helpu i ddewis.</li>
+  <li>Mae llwybr buddsoddi yn opsiwn buddsoddi parod, sy’n symleiddio’r penderfyniad ar sut i fuddsoddi’ch cronfa bensiwn sy’n weddill ar ôl i chi gymryd eich cyfandaliad di-dreth.</li>
+  <li>Fel gyda phob buddsoddiad, gall gwerth eich cronfa fynd i fyny neu i lawr.</li>
+  <li>Efallai y byddwch yn gallu parhau i dalu i mewn i bensiwn arall ar ôl i chi gymryd arian allan, ond gallech dalu tâl treth ar gyfraniadau dros £10,000 y flwyddyn (a elwir yn ‘lwfans blynyddol prynu arian’).</li>
 </ol>
 
 <hr>
 
 <div class="next-steps next-steps--adjustable-income">
-  <h3>Next steps</h3>
-  <h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
+  <h3>Camau nesaf</h3>
+  <h4 class="pull icon icon--questions">Cwestiynau i'w gofyn i'ch darparwr:</h4>
 
   <ul class="list list--questions">
-    <li>Do you offer pension drawdown?</li>
-    <li>Will I have to pay any fees, eg each time I take a payment?</li>
-    <li>How much could my pot grow or go down? Some providers now offer products which include guarantees</li>
-    <li>Will you charge me a fee if I move my pot to a provider that offers this option?</li>
-    <li>Does my pot have any special features like a guaranteed annuity rate?</li>
+    <li>Ydych chi'n cynnig tynnu pensiwn i lawr?</li>
+    <li>A fydd yn rhaid i mi dalu unrhyw ffioedd, ee bob tro y byddaf yn cymryd taliad?</li>
+    <li>Faint allai fy nghronfa dyfu neu ostwng? Mae rhai darparwyr bellach yn cynnig cynhyrchion sy'n cynnwys gwarantau</li>
+    <li>A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy'n cynnig yr opsiwn hwn?</li>
+    <li>A oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?</li>
   </ul>
 </div>
 
-<h4 class="icon icon--website downshift">Go to our website for more guidance on:</h4>
+<h4 class="icon icon--website downshift">Ewch i'n gwefan am ragor o arweiniad ar:</h4>
 
 <ul class="list list--arrow">
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown#How-pension-drawdown-works" class="expanded" data-url="moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown#How-pension-drawdown-works">How pension drawdown works</a></li>
-  <li><a target="_blank" href="https://comparison.moneyhelper.org.uk/en/tools/drawdown-investment-pathways" class="expanded" data-url="comparison.moneyhelper.org.uk/en/tools/drawdown-investment-pathways">Shopping around – Our investment pathways tool which will help you shop around the market to get the best deal</a></li>
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions" class="expanded" data-url="moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions">How much tax you would pay on any money you’re planning to take out</a></li>
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser" class="expanded" data-url="moneyhelper.org.uk/en/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser">Getting financial advice</a></li>
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown#Pension-recycling" class="expanded" data-url="moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown#Pension-recycling">Pension recycling tax laws</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown#How-pension-drawdown-works" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown#How-pension-drawdown-works">Sut mae tynnu pensiwn i lawr yn gweithio</a></li>
+  <li><a target="_blank" href="https://comparison.moneyhelper.org.uk/cy/tools/drawdown-investment-pathways" class="expanded" data-url="comparison.moneyhelper.org.uk/cy/tools/drawdown-investment-pathways">Siopwch o gwmpas – Ein teclyn llwybrau buddsoddi a fydd yn eich helpu i siopa o gwmpas y farchnad i gael y fargen orau</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions">Faint o dreth y byddech chi'n ei thalu ar unrhyw arian rydych chi'n bwriadu ei godi</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser" class="expanded" data-url="moneyhelper.org.uk/cy/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser">Cael cyngor ariannol</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown#Pension-recycling" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown#Pension-recycling">Deddfau treth ailgylchu pensiynau</a></li>
 </ul>
 <!-- /option: adjustable -->
 
@@ -139,31 +141,31 @@
 
 <!-- option: chunks -->
 <div class="page-break"></div>
-<h2 class="option">4. Take your pension as a number of lump sums</h2>
+<h2 class="option">4. Cymryd eich pensiwn fel nifer o gyfandaliadau</h2>
 
-<h3>Key facts</h3>
+<h3>Ffeithiau allweddol</h3>
 
 <ol class="ordered-list">
-  <li>Instead of taking your whole pension in one go, you take smaller lump sums over time. 25% of each lump sum you take out is tax free and the rest is taxable.</li>
-  <li>75% of the lump sum of cash you take will get taxed along with any other income you have, eg from work, savings or investments.</li>
-  <li>You’re likely to be involved in choosing and managing your investments.</li>
-  <li>You can spread the lump sums out over multiple tax years to reduce your income which could mean you pay less tax.</li>
-  <li>Providers may describe this option as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS) or partial encashment.</li>
-  <li>You may be able to keep paying in after you take money out but you could pay a tax charge on contributions over £10,000 a year (known as the ‘money purchase annual allowance’).</li>
+  <li> Yn lle cymryd eich pensiwn cyfan ar yr un pryd, byddwch yn cymryd cyfandaliadau llai dros amser. Mae 25% o bob cyfandaliad y byddwch yn ei gymryd allan yn ddi-dreth ac mae'r gweddill yn drethadwy.</li>
+  <li>Bydd 75% o'r cyfandaliad o arian parod a gymerwch yn cael ei drethu ynghyd ag unrhyw incwm arall sydd gennych, e.e. o waith, cynilion neu fuddsoddiadau.</li>
+  <li>Rydych yn debygol o fod yn rhan o ddewis a rheoli eich buddsoddiadau.</li>
+  <li>Gallwch ledaenu'r cyfandaliadau dros sawl blwyddyn dreth i leihau eich incwm a allai olygu eich bod yn talu llai o dreth.</li>
+  <li>Gall darparwyr ddisgrifio’r opsiwn hwn fel ‘Cyfandaliad Pensiwn Cronfeydd Digrisial’ (UFPLS) neu dalu allan rhannol.</li>
+  <li>Efallai y byddwch yn gallu parhau i dalu i mewn ar ôl i chi gymryd arian allan ond gallech dalu tâl treth ar gyfraniadau dros £10,000 y flwyddyn (a elwir yn ‘lwfans blynyddol prynu arian’).</li>
 </ol>
 
-<p class="emphasise">If you invest your pot into pension drawdown, you won’t be able to take any more tax-free cash and can’t use this option.</p>
+<p class="emphasise">Os ydych yn fuddsoddi eich cronfa mewn tynnu pensiwn i lawr, ni fyddwch yn gallu cymryd mwy o arian parod di-dreth ac ni allwch ddefnyddio’r opsiwn hwn.</p>
 
 <hr>
 
 <div class="next-steps next-steps--take-cash-in-chunks">
-  <h3>Next steps</h3>
-  <h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
+  <h3>Camau nesaf</h3>
+  <h4 class="pull icon icon--questions">Cwestiynau i'w gofyn i'ch darparwr:</h4>
 
   <ul class="list list--questions">
-    <li>Do you offer ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS)?</li>
-    <li>Will you charge me a fee if I move my pot to a provider that offers this option?</li>
-    <li>Does my pot have any special features like a guaranteed annuity rate?</li>
+    <li>A ydych yn cynnig ‘Cyfandaliad Pensiwn Cronfeydd Digrisial’ (UFPLS)?</li>
+    <li>A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy'n cynnig yr opsiwn hwn?</li>
+    <li>A oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?</li>
   </ul>
 </div>
 
@@ -171,12 +173,12 @@
   <div class="page-break"></div>
 <% end %>
 
-<h4 class="icon icon--website downshift">Go to our website for more guidance on:</h4>
+<h4 class="icon icon--website downshift">Ewch i'n gwefan am ragor o arweiniad ar:</h4>
 
 <ul class="list list--arrow">
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/shopping-around-for-pension-income-products-at-retirement" class="expanded" data-url="moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/shopping-around-for-pension-income-products-at-retirement">Shopping around for quotes from other providers</a></li>
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions" class="expanded" data-url="moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions">Finding out how much tax you would pay on any money you’re planning to take out</a></li>
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser" class="expanded" data-url="moneyhelper.org.uk/en/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser">Getting financial advice</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/shopping-around-for-pension-income-products-at-retirement" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/shopping-around-for-pension-income-products-at-retirement">Siopa o gwmpas am ddyfynbrisiau gan ddarparwyr eraill</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions">Darganfod faint o dreth y byddech chi'n ei thalu ar unrhyw arian rydych chi'n bwriadu ei godi</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser" class="expanded" data-url="moneyhelper.org.uk/cy/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser">Cael cyngor ariannol</a></li>
 </ul>
 <!-- /option: chunks -->
 
@@ -184,33 +186,33 @@
 
 <!-- option: whole -->
 <div class="page-break"></div>
-<h2 class="option">5. Take your whole pension in one go</h2>
+<h2 class="option">5. Cymerwch eich pensiwn cyfan ar yr un pryd</h2>
 
-<h3>Key facts</h3>
+<h3>Ffeithiau allweddol</h3>
 
 <ol class="ordered-list">
-  <li>If you take your whole pension in one go 25% is tax free and the remaining 75% is taxable.</li>
-  <li>The money from your pot will be added to any other income you have over the tax year.</li>
-  <li>Adding a large cash sum to your income could put you in a higher tax band.</li>
-  <li>You can take up to 3 small personal pension pots of up to £10,000 each without it counting towards your annual or lump sum allowances. There’s normally no limit on the number of workplace pensions that you can cash in under the small pots rule.</li>
-  <li>Taking your whole pension in one go could affect your entitlement to benefits.</li>
-  <li>You may be able to keep paying in after you take money out but you could pay a tax charge on contributions over £10,000 a year (known as the ‘money purchase annual allowance’).</li>
+  <li>Os cymerwch eich pensiwn cyfan ar yr un pryd mae 25% yn ddi-dreth ac mae'r 75% sy'n weddill yn drethadwy.</li>
+  <li>Bydd yr arian o'ch cronfa yn cael ei ychwanegu at unrhyw incwm arall sydd gennych dros y flwyddyn dreth.</li>
+  <li>Gallai ychwanegu swm arian parod mawr at eich incwm eich rhoi mewn band treth uwch.</li>
+  <li>Gallwch gymryd hyd at 3 cronfa bensiwn personol bach o hyd at £10,000 heb iddo gyfrif tuag at eich lwfansau blynyddol neu gyfandaliad. Fel arfer nid oes terfyn ar y nifer o bensiynau gweithle y gallwch gymryd arian allan o dan y rheol cronfeydd bach.</li>
+  <li>Gallai cymryd eich pensiwn cyfan ar yr un pryd effeithio ar eich hawl i fudd-daliadau.</li>
+  <li>Efallai y byddwch yn gallu parhau i dalu i mewn ar ôl i chi gymryd arian allan ond gallech dalu tâl treth ar gyfraniadau dros £10,000 y flwyddyn (a elwir yn ‘lwfans blynyddol prynu arian’).</li>
 </ol>
 
 <p class="emphasise">
-  You should think about this option carefully. Once you’ve taken the money out you can’t change the decision and you lose the tax-free status it had while in your pot.
+  Dylech feddwl am yr opsiwn hwn yn ofalus. Unwaith y byddwch wedi tynnu’r arian allan ni allwch newid y penderfyniad a byddwch yn colli’r statws di-dreth oedd ganddo tra yn eich cronfa.
 </p>
 
 <hr>
 
 <div class="next-steps next-steps--whole-pot">
-<h3>Next steps</h3>
-  <h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
+<h3>Camau nesaf</h3>
+  <h4 class="pull icon icon--questions">Cwestiynau i'w gofyn i'ch darparwr:</h4>
 
   <ul class="list list--questions">
-    <li>Can I take my whole pension in one go?</li>
-    <li>Will you charge me a fee if I move my pot to a provider that offers this option?</li>
-    <li>Can I cash in my pension under the small pots rule? (Ask if your pot is under £10,000)</li>
+    <li>A allaf gymryd fy mhensiwn cyfan ar yr un pryd?</li>
+    <li>A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy'n cynnig yr opsiwn hwn?</li>
+    <li>A allaf gyfnewid fy mhensiwn o dan y rheol cronfeydd bach? (Gofynnwch a yw eich cronfa o dan £10,000)</li>
   </ul>
 </div>
 
@@ -218,14 +220,14 @@
   <div class="page-break"></div>
 <% end %>
 
-<h4 class="icon icon--website">Go to our website for more guidance on:</h4>
+<h4 class="icon icon--website">Ewch i'n gwefan am ragor o arweiniad ar:</h4>
 
 <ul class="list list--arrow">
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/checklist-things-to-do-as-retirement-approaches" class="expanded" data-url="moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/checklist-things-to-do-as-retirement-approaches">How much income you’ll need in future years of retirement</a></li>
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go#things-to-think-about" class="expanded" data-url="moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go#things-to-think-about">How much tax you would pay if you took your whole pension in one go</a></li>
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser" class="expanded" data-url="moneyhelper.org.uk/en/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser">Getting financial advice</a></li>
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/money-troubles/scams/how-to-spot-a-pension-scam" class="expanded" data-url="moneyhelper.org.uk/en/money-troubles/scams/how-to-spot-a-pension-scam">How to avoid a pension scam</a></li>
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-problems/pensions-after-death" class="expanded" data-url="moneyhelper.org.uk/en/pensions-and-retirement/pension-problems/pensions-after-death">Your pension when you die</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/checklist-things-to-do-as-retirement-approaches" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/checklist-things-to-do-as-retirement-approaches">Faint o incwm fydd ei angen arnoch ym mlynyddoedd eich ymddeoliad yn y dyfodol</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go#things-to-think-about" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go#things-to-think-about">Faint o dreth y byddech yn ei dalu pe baech yn cymryd eich pensiwn cyfan ar yr un pryd</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser" class="expanded" data-url="moneyhelper.org.uk/cy/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser">Cael cyngor ariannol</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/money-troubles/scams/how-to-spot-a-pension-scam" class="expanded" data-url="moneyhelper.org.uk/cy/money-troubles/scams/how-to-spot-a-pension-scam">Sut i osgoi sgam pensiwn</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems/pensions-after-death" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems/pensions-after-death">Eich pensiwn pan fyddwch yn marw</a></li>
 </ul>
 <!-- /option: whole -->
 
@@ -233,14 +235,14 @@
 
 <!-- option: mix -->
 <div class="page-break"></div>
-<h2 class="option">6. Mix your options</h2>
+<h2 class="option">6. Cymysgwch eich opsiynau </h2>
 
-<h3>Key facts</h3>
+<h3>Ffeithiau allweddol</h3>
 
 <ol class="ordered-list">
-  <li>You can mix your options, eg use some of your pot to get a flexible retirement income (pension drawdown) and some to buy a guaranteed retirement income (annuity).</li>
-  <li>Not all providers offer all the options.</li>
-  <li>If you have more than one pot, you can use different options for each pot, eg delay taking one pot and take a number of lump sums from another.</li>
+  <li>Gallwch gymysgu'ch opsiynau, e.e. defnyddio peth o'ch cronfa i gael incwm ymddeoliad hyblyg (tynnu pensiwn i lawr) a rhai i brynu incwm ymddeol gwarantedig (blwydd-dal).</li>
+  <li>Nid yw pob darparwr yn cynnig yr holl opsiynau.</li>
+  <li>Os oes gennych fwy nag un gronfa, gallwch ddefnyddio opsiynau gwahanol ar gyfer pob cronfa, e.e. oedi cyn cymryd un gronfa a chymryd nifer o gyfandaliadau o un arall.</li>
 </ol>
 
 <% if standard_text? %>
@@ -248,21 +250,21 @@
 <% end %>
 
 <div class="next-steps next-steps--mix-options">
-  <h3>Next steps</h3>
-  <h4 class="pull icon icon--questions">Questions to ask your provider:</h4>
+  <h3>Camau nesaf</h3>
+  <h4 class="pull icon icon--questions">Cwestiynau i'w gofyn i'ch darparwr:</h4>
 
   <ul class="list list--questions">
-    <li>Which pension options do you offer?</li>
-    <li>Can I mix some of the options together?</li>
-    <li>Will you charge me a fee if I move my pot to a provider that offers the options I want?</li>
+    <li>Pa opsiynau pensiwn ydych chi'n eu cynnig?</li>
+    <li>A allaf gymysgu rhai o'r opsiynau gyda'i gilydd?</li>
+    <li>A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy'n cynnig yr opsiynau sydd eu heisiau arnaf?</li>
   </ul>
 </div>
 
-<h4 class="icon icon--website downshift">Go to our website for more guidance on:</h4>
+<h4 class="icon icon--website downshift">Ewch i'n gwefan am ragor o arweiniad ar:</h4>
 
 <ul class="list list--arrow">
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/your-options-for-using-your-defined-contribution-pension-pot" class="expanded" data-url="moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/your-options-for-using-your-defined-contribution-pension-pot">All the pension options to see which ones are right for you</a></li>
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser#pensions" class="expanded" data-url="moneyhelper.org.uk/en/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser#pensions">Speaking to a financial adviser – mixing different options can be complicated</a></li>
-  <li><a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/shopping-around-for-pension-income-products-at-retirement" class="expanded" data-url="moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/shopping-around-for-pension-income-products-at-retirement">Shopping around for the best deal – you don’t have to stay with your current provider</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/your-options-for-using-your-defined-contribution-pension-pot" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/your-options-for-using-your-defined-contribution-pension-pot">Yr holl opsiynau pensiwn i weld pa rai sy'n iawn i chi</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser#pensions" class="expanded" data-url="moneyhelper.org.uk/cy/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser#pensions">Siarad â chynghorydd ariannol – gall cymysgu gwahanol opsiynau fod yn gymhleth</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/shopping-around-for-pension-income-products-at-retirement" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/shopping-around-for-pension-income-products-at-retirement">Chwilio am y fargen orau – does dim rhaid i chi aros gyda'ch darparwr presennol</a></li>
 </ul>
 <!-- /option: mix -->
