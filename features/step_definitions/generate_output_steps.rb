@@ -40,3 +40,11 @@ end
 When(/^we generate an ineligibility letter$/) do
   @rendered_template = Output::Templates.template(:ineligible).render(@output_document)
 end
+
+Given(/^a customer has indicated they are Welsh speaking$/) do
+  @output_document = fixture(:output_document, welsh?: true)
+end
+
+Then(/^the summary document is in Welsh$/) do
+  expect(@rendered_template).to include('Annwyl Mr Joe Bloggs')
+end

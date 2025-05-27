@@ -1,0 +1,268 @@
+<!-- section: detail about each option -->
+
+<!-- option: untouched -->
+<div class="page-break"></div>
+<h2 class="option">1. Ymddeol yn hwyrach neu oedi cymryd eich cronfa bensiwn</h2>
+
+<h3>Ffeithiau allweddol</h3>
+
+<ol class="ordered-list">
+  <li>Tra bod yr arian yn aros yn eich cronfa nid ydych yn talu treth arno.</li>
+  <li>Chi sydd i benderfynu pryd y cymerwch yr arian – y cynharaf fel arfer yw 55 oed, oni bai bod gennych salwch difrifol. Mae’r oedran cynharaf y gallwch gael mynediad i’ch cronfa bensiwn yn cynyddu i 57 oed ar 6 Ebrill 2028.</li>
+  <li>Os bydd rhywun yn cysylltu â chi’n annisgwyl ynghylch cael arian allan o’ch cronfa cyn eich bod yn 55 oed, mae bron bob amser yn sgam pensiwn.</li>
+  <% if appointment_50_54? %>
+    <!-- section: warning about leaving pot beyond selected retirement age -->
+    <li>Mae’n bosibl y byddwch yn dal i allu talu i mewn i’ch cronfa ond efallai y codir tâl arnoch am adael eich cronfa y tu hwnt i’ch ‘oedran ymddeol a ddewiswyd’ – yr oedran y gwnaethoch gytuno i ymddeol gyda’ch darparwr.</li>
+  <% else %>
+    <li>Gallwch hefyd dalu i mewn i'ch cronfa ond efallai y bydd cyfyngiadau. Os ydych yn gyflogai efallai y bydd eich cyflogwr yn parhau i wneud cyfraniadau hefyd.</li>
+  <% end %>
+  <li>Gellir trosglwyddo arian sy'n weddill yn eich cronfa pan fyddwch yn marw.</li>
+</ol>
+
+<hr>
+
+<div class="next-steps next-steps--leave-pot-untouched">
+  <h3>Camau nesaf</h3>
+  <h4 class="pull icon icon--questions">Cwestiynau i'w gofyn i'ch darparwr:</h4>
+
+  <ul class="list list--questions">
+    <% if appointment_50_54? %>
+      <li>Ydw i wedi cytuno ar oedran ymddeol gyda chi? Beth yw e?</li>
+    <% else %>
+      <li>Oes rhaid i mi gymryd yr arian erbyn dyddiad penodol?</li>
+    <% end %>
+    <li>Beth yw'r ffioedd ar gyfer gohirio cymryd fy nghronfa bensiwn?</li>
+    <li>Sut mae'r arian yn cael ei fuddsoddi ac a allaf newid hyn os ydw i eisiau?</li>
+    <li>Faint y gallaf ei dalu i mewn o hyd?</li>
+    <li>A oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?</li>
+    <li>A oes gennych y manylion diweddaraf am bwy yr wyf am adael fy nghronfa iddynt (fy ‘muddiolwr’) pan fyddaf yn marw?</li>
+  </ul>
+</div>
+
+<h4 class="icon icon--website downshift">Ewch i'n gwefan am ragor o arweiniad ar:</h4>
+
+<ul class="list list--arrow">
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/retiring-later-or-delaying-taking-your-pension-pot" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/retiring-later-or-delaying-taking-your-pension-pot">Ymddeol yn hwyrach neu ohirio cymryd eich cronfa bensiwn</a></li>
+</ul>
+<!-- /option: untouched -->
+
+
+
+<!-- option: annuity -->
+<div class="page-break"></div>
+<h2 class="option">2. Cael incwm ymddeol gwarantedig (blwydd-dal)</h2>
+
+<h3>Ffeithiau allweddol</h3>
+
+<ol class="ordered-list">
+  <li>Mae hwn yn fath o gynnyrch yswiriant sy'n rhoi incwm gwarantedig i chi.</li>
+  <li>Gallwch siopa o gwmpas am flwydd-dal – nid oes rhaid i chi brynu un gan eich darparwr pensiwn presennol.</li>
+  <li>Gallwch brynu blwydd-dal am gyfnod penodol neu weddill eich oes.</li>
+  <li>Fel arfer gallwch gymryd hyd at 25% o'ch cronfa yn ddi-dreth – os gwnewch hyn rhaid i chi brynu blwydd-dal gyda'r 75% sy'n weddill neu ddefnyddio un o'r opsiynau eraill.</li>
+  <li>Os ydych yn derbyn incwm pensiwn ar hyn o bryd mae’n debygol eich bod eisoes wedi prynu blwydd-dal neu’n cymryd incwm o bensiwn cyflog terfynol neu gyfartaledd gyrfa (buddion wedi’u diffinio).</li>
+  <li>Mae llawer o wahanol fathau o flwydd-daliadau ac mae'n bwysig eich bod yn cael yr un iawn i chi.</li>
+</ol>
+
+<hr>
+
+<div class="next-steps next-steps--guaranteed-income">
+  <h3>Camau nesaf</h3>
+  <h4 class="pull icon icon--questions">Cwestiynau i'w gofyn i'ch darparwr:</h4>
+
+  <ul class="list list--questions">
+    <li>A oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?</li>
+    <li>Ydw i'n gymwys i gael blwydd-dal uwch neu amhariad? Bydd angen i chi ddweud wrth eich darparwr os ydych yn ysmygu neu os oes gennych gyflwr meddygol</li>
+    <li>Pa fathau o flwydd-dal ydych chi'n eu cynnig?</li>
+  </ul>
+</div>
+
+<% if standard_text? %>
+  <div class="page-break"></div>
+<% end %>
+
+<h4 class="icon icon--website downshift">Ewch i'n gwefan am ragor o arweiniad ar:</h4>
+
+<ul class="list list--arrow">
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#types-of-annuity" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#types-of-annuity">Y gwahanol fathau o flwydd-dal</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#enhanced-annuities" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#enhanced-annuities">Pam ei bod yn bwysig bod yn onest am eich iechyd</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions">Deall faint o dreth y gallwch ei thalu ar eich incwm blwydd-dal</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#can-you-continue-contributing-to-a-pension-if-you-purchase-an-annuity" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained#can-you-continue-contributing-to-a-pension-if-you-purchase-an-annuity">Deddfau treth ailgylchu pensiynau</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/compare-annuities" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/compare-annuities">Siopwch o gwmpas am flwydd-daliadau gan ddefnyddio ein teclyn ar-lein, i'ch helpu i gael y fargen orau</a></li>
+</ul>
+<!-- /option: annuity -->
+
+
+
+
+<!-- option: adjustable -->
+<div class="page-break"></div>
+<h2 class="option">3. Cael incwm ymddeoliad hyblyg (tynnu pensiwn i lawr)</h2>
+
+<h3>Ffeithiau allweddol</h3>
+
+<ol class="ordered-list">
+  <li>Byddwch yn cael incwm o'ch cronfa sy'n drethadwy. Chi sy'n penderfynu faint i'w dynnu allan a phryd, a pha mor hir rydych chi am iddo bara. Gelwir yr opsiwn hwn yn ‘dynnu pensiwn i lawr’.</li>
+  <li>Rydych yn symud eich cronfa i gynnyrch tynnu pensiwn i lawr, yna fel arfer gallwch gymryd hyd at 25% o'ch cronfa yn ddi-dreth ac mae'r arian sy'n weddill yn cael ei fuddsoddi. Gallwch chi benderfynu faint a pha mor aml rydych chi am dynnu arian o'r gronfa.</li>
+  <li>Bydd eich darparwr yn gofyn i chi sut yr hoffech fuddsoddi'ch cronfa sy'n weddill pan fyddwch yn symud i mewn i dynnu pensiwn i lawr. Bydd angen i chi naill ai ddewis eich buddsoddiadau eich hun, h.y. rhai sy’n cyd-fynd â’ch agwedd at risg ac amcanion ar gyfer eich arian, neu bydd rhai darparwyr yn cynnig i chi ddewis o opsiynau buddsoddi parod syml sy’n gysylltiedig â’ch cynlluniau ymddeol (gelwir y rhain yn Llwybrau Buddsoddi). Gallech hefyd ddefnyddio cynghorydd ariannol i'ch helpu i ddewis.</li>
+  <li>Mae llwybr buddsoddi yn opsiwn buddsoddi parod, sy’n symleiddio’r penderfyniad ar sut i fuddsoddi’ch cronfa bensiwn sy’n weddill ar ôl i chi gymryd eich cyfandaliad di-dreth.</li>
+  <li>Fel gyda phob buddsoddiad, gall gwerth eich cronfa fynd i fyny neu i lawr.</li>
+  <li>Efallai y byddwch yn gallu parhau i dalu i mewn i bensiwn arall ar ôl i chi gymryd arian allan, ond gallech dalu tâl treth ar gyfraniadau dros £10,000 y flwyddyn (a elwir yn ‘lwfans blynyddol prynu arian’).</li>
+</ol>
+
+<hr>
+
+<div class="next-steps next-steps--adjustable-income">
+  <h3>Camau nesaf</h3>
+  <h4 class="pull icon icon--questions">Cwestiynau i'w gofyn i'ch darparwr:</h4>
+
+  <ul class="list list--questions">
+    <li>Ydych chi'n cynnig tynnu pensiwn i lawr?</li>
+    <li>A fydd yn rhaid i mi dalu unrhyw ffioedd, ee bob tro y byddaf yn cymryd taliad?</li>
+    <li>Faint allai fy nghronfa dyfu neu ostwng? Mae rhai darparwyr bellach yn cynnig cynhyrchion sy'n cynnwys gwarantau</li>
+    <li>A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy'n cynnig yr opsiwn hwn?</li>
+    <li>A oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?</li>
+  </ul>
+</div>
+
+<h4 class="icon icon--website downshift">Ewch i'n gwefan am ragor o arweiniad ar:</h4>
+
+<ul class="list list--arrow">
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown#How-pension-drawdown-works" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown#How-pension-drawdown-works">Sut mae tynnu pensiwn i lawr yn gweithio</a></li>
+  <li><a target="_blank" href="https://comparison.moneyhelper.org.uk/cy/tools/drawdown-investment-pathways" class="expanded" data-url="comparison.moneyhelper.org.uk/cy/tools/drawdown-investment-pathways">Siopwch o gwmpas – Ein teclyn llwybrau buddsoddi a fydd yn eich helpu i siopa o gwmpas y farchnad i gael y fargen orau</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions">Faint o dreth y byddech chi'n ei thalu ar unrhyw arian rydych chi'n bwriadu ei godi</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser" class="expanded" data-url="moneyhelper.org.uk/cy/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser">Cael cyngor ariannol</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown#Pension-recycling" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown#Pension-recycling">Deddfau treth ailgylchu pensiynau</a></li>
+</ul>
+<!-- /option: adjustable -->
+
+
+
+<!-- option: chunks -->
+<div class="page-break"></div>
+<h2 class="option">4. Cymryd eich pensiwn fel nifer o gyfandaliadau</h2>
+
+<h3>Ffeithiau allweddol</h3>
+
+<ol class="ordered-list">
+  <li> Yn lle cymryd eich pensiwn cyfan ar yr un pryd, byddwch yn cymryd cyfandaliadau llai dros amser. Mae 25% o bob cyfandaliad y byddwch yn ei gymryd allan yn ddi-dreth ac mae'r gweddill yn drethadwy.</li>
+  <li>Bydd 75% o'r cyfandaliad o arian parod a gymerwch yn cael ei drethu ynghyd ag unrhyw incwm arall sydd gennych, e.e. o waith, cynilion neu fuddsoddiadau.</li>
+  <li>Rydych yn debygol o fod yn rhan o ddewis a rheoli eich buddsoddiadau.</li>
+  <li>Gallwch ledaenu'r cyfandaliadau dros sawl blwyddyn dreth i leihau eich incwm a allai olygu eich bod yn talu llai o dreth.</li>
+  <li>Gall darparwyr ddisgrifio’r opsiwn hwn fel ‘Cyfandaliad Pensiwn Cronfeydd Digrisial’ (UFPLS) neu dalu allan rhannol.</li>
+  <li>Efallai y byddwch yn gallu parhau i dalu i mewn ar ôl i chi gymryd arian allan ond gallech dalu tâl treth ar gyfraniadau dros £10,000 y flwyddyn (a elwir yn ‘lwfans blynyddol prynu arian’).</li>
+</ol>
+
+<p class="emphasise">Os ydych yn fuddsoddi eich cronfa mewn tynnu pensiwn i lawr, ni fyddwch yn gallu cymryd mwy o arian parod di-dreth ac ni allwch ddefnyddio’r opsiwn hwn.</p>
+
+<hr>
+
+<div class="next-steps next-steps--take-cash-in-chunks">
+  <h3>Camau nesaf</h3>
+  <h4 class="pull icon icon--questions">Cwestiynau i'w gofyn i'ch darparwr:</h4>
+
+  <ul class="list list--questions">
+    <li>A ydych yn cynnig ‘Cyfandaliad Pensiwn Cronfeydd Digrisial’ (UFPLS)?</li>
+    <li>A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy'n cynnig yr opsiwn hwn?</li>
+    <li>A oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?</li>
+  </ul>
+</div>
+
+<% unless large_text? %>
+  <div class="page-break"></div>
+<% end %>
+
+<h4 class="icon icon--website downshift">Ewch i'n gwefan am ragor o arweiniad ar:</h4>
+
+<ul class="list list--arrow">
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/shopping-around-for-pension-income-products-at-retirement" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/shopping-around-for-pension-income-products-at-retirement">Siopa o gwmpas am ddyfynbrisiau gan ddarparwyr eraill</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions">Darganfod faint o dreth y byddech chi'n ei thalu ar unrhyw arian rydych chi'n bwriadu ei godi</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser" class="expanded" data-url="moneyhelper.org.uk/cy/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser">Cael cyngor ariannol</a></li>
+</ul>
+<!-- /option: chunks -->
+
+
+
+<!-- option: whole -->
+<div class="page-break"></div>
+<h2 class="option">5. Cymerwch eich pensiwn cyfan ar yr un pryd</h2>
+
+<h3>Ffeithiau allweddol</h3>
+
+<ol class="ordered-list">
+  <li>Os cymerwch eich pensiwn cyfan ar yr un pryd mae 25% yn ddi-dreth ac mae'r 75% sy'n weddill yn drethadwy.</li>
+  <li>Bydd yr arian o'ch cronfa yn cael ei ychwanegu at unrhyw incwm arall sydd gennych dros y flwyddyn dreth.</li>
+  <li>Gallai ychwanegu swm arian parod mawr at eich incwm eich rhoi mewn band treth uwch.</li>
+  <li>Gallwch gymryd hyd at 3 cronfa bensiwn personol bach o hyd at £10,000 heb iddo gyfrif tuag at eich lwfansau blynyddol neu gyfandaliad. Fel arfer nid oes terfyn ar y nifer o bensiynau gweithle y gallwch gymryd arian allan o dan y rheol cronfeydd bach.</li>
+  <li>Gallai cymryd eich pensiwn cyfan ar yr un pryd effeithio ar eich hawl i fudd-daliadau.</li>
+  <li>Efallai y byddwch yn gallu parhau i dalu i mewn ar ôl i chi gymryd arian allan ond gallech dalu tâl treth ar gyfraniadau dros £10,000 y flwyddyn (a elwir yn ‘lwfans blynyddol prynu arian’).</li>
+</ol>
+
+<p class="emphasise">
+  Dylech feddwl am yr opsiwn hwn yn ofalus. Unwaith y byddwch wedi tynnu’r arian allan ni allwch newid y penderfyniad a byddwch yn colli’r statws di-dreth oedd ganddo tra yn eich cronfa.
+</p>
+
+<hr>
+
+<div class="next-steps next-steps--whole-pot">
+<h3>Camau nesaf</h3>
+  <h4 class="pull icon icon--questions">Cwestiynau i'w gofyn i'ch darparwr:</h4>
+
+  <ul class="list list--questions">
+    <li>A allaf gymryd fy mhensiwn cyfan ar yr un pryd?</li>
+    <li>A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy'n cynnig yr opsiwn hwn?</li>
+    <li>A allaf gyfnewid fy mhensiwn o dan y rheol cronfeydd bach? (Gofynnwch a yw eich cronfa o dan £10,000)</li>
+  </ul>
+</div>
+
+<% if standard_text? %>
+  <div class="page-break"></div>
+<% end %>
+
+<h4 class="icon icon--website">Ewch i'n gwefan am ragor o arweiniad ar:</h4>
+
+<ul class="list list--arrow">
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/checklist-things-to-do-as-retirement-approaches" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/checklist-things-to-do-as-retirement-approaches">Faint o incwm fydd ei angen arnoch ym mlynyddoedd eich ymddeoliad yn y dyfodol</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go#things-to-think-about" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go#things-to-think-about">Faint o dreth y byddech yn ei dalu pe baech yn cymryd eich pensiwn cyfan ar yr un pryd</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser" class="expanded" data-url="moneyhelper.org.uk/cy/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser">Cael cyngor ariannol</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/money-troubles/scams/how-to-spot-a-pension-scam" class="expanded" data-url="moneyhelper.org.uk/cy/money-troubles/scams/how-to-spot-a-pension-scam">Sut i osgoi sgam pensiwn</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems/pensions-after-death" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems/pensions-after-death">Eich pensiwn pan fyddwch yn marw</a></li>
+</ul>
+<!-- /option: whole -->
+
+
+
+<!-- option: mix -->
+<div class="page-break"></div>
+<h2 class="option">6. Cymysgwch eich opsiynau </h2>
+
+<h3>Ffeithiau allweddol</h3>
+
+<ol class="ordered-list">
+  <li>Gallwch gymysgu'ch opsiynau, e.e. defnyddio peth o'ch cronfa i gael incwm ymddeoliad hyblyg (tynnu pensiwn i lawr) a rhai i brynu incwm ymddeol gwarantedig (blwydd-dal).</li>
+  <li>Nid yw pob darparwr yn cynnig yr holl opsiynau.</li>
+  <li>Os oes gennych fwy nag un gronfa, gallwch ddefnyddio opsiynau gwahanol ar gyfer pob cronfa, e.e. oedi cyn cymryd un gronfa a chymryd nifer o gyfandaliadau o un arall.</li>
+</ol>
+
+<% if standard_text? %>
+  <hr>
+<% end %>
+
+<div class="next-steps next-steps--mix-options">
+  <h3>Camau nesaf</h3>
+  <h4 class="pull icon icon--questions">Cwestiynau i'w gofyn i'ch darparwr:</h4>
+
+  <ul class="list list--questions">
+    <li>Pa opsiynau pensiwn ydych chi'n eu cynnig?</li>
+    <li>A allaf gymysgu rhai o'r opsiynau gyda'i gilydd?</li>
+    <li>A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy'n cynnig yr opsiynau sydd eu heisiau arnaf?</li>
+  </ul>
+</div>
+
+<h4 class="icon icon--website downshift">Ewch i'n gwefan am ragor o arweiniad ar:</h4>
+
+<ul class="list list--arrow">
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/your-options-for-using-your-defined-contribution-pension-pot" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/your-options-for-using-your-defined-contribution-pension-pot">Yr holl opsiynau pensiwn i weld pa rai sy'n iawn i chi</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser#pensions" class="expanded" data-url="moneyhelper.org.uk/cy/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser#pensions">Siarad â chynghorydd ariannol – gall cymysgu gwahanol opsiynau fod yn gymhleth</a></li>
+  <li><a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/shopping-around-for-pension-income-products-at-retirement" class="expanded" data-url="moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/shopping-around-for-pension-income-products-at-retirement">Chwilio am y fargen orau – does dim rhaid i chi aros gyda'ch darparwr presennol</a></li>
+</ul>
+<!-- /option: mix -->
