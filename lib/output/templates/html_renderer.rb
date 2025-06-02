@@ -1,5 +1,4 @@
 require 'pathname'
-require 'pry'
 require 'output/templates/html_rendering_context'
 
 module Output
