@@ -13,8 +13,10 @@ module Output
       end
 
       def call(data, sections, template_id = '')
+        language = data&.welsh? ? 'cy' : 'en'
+
         template = Array(sections)
-                   .map { |section| template_for(section) }
+                   .map { |section| template_for(section, language) }
                    .join("\n\n")
 
         render(data, template, template_id)
@@ -27,8 +29,8 @@ module Output
         ERB.new(template).result(context.binding)
       end
 
-      def template_for(section)
-        File.read(asset_root.join('markup', "#{section}.html.erb"))
+      def template_for(section, language)
+        File.read(asset_root.join('markup', language, "#{section}.html.erb"))
       end
     end
   end

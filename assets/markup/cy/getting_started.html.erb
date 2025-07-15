@@ -8,141 +8,141 @@
 <% end %>
 
 <% if next_steps? %>
-<h2>Next steps</h2>
+<h2>Camau nesaf</h2>
 <% end %>
 
 <% case covering_letter_type
    when 'section_32' %>
- <h3 class="option">Ask your pension provider if you have a Section 32 arrangement</h3>
- <p>A Section 32 arrangement might limit your options for taking your pension or transferring it to a different provider. For example, you may not be able to take any tax-free cash.</p>
- <p>You might also have to wait until a set retirement date before you can take your money. Ask your pension provider to explain any restrictions that apply to you.</p>
+ <h3 class="option">Gofynnwch i’ch darparwr pensiwn os oes gennych chi drefniant Adran 32</h3>
+ <p>Gallai trefniant Adran 32 gyfyngu eich opsiynau ar gyfer cymryd eich pensiwn neu ei drosglwyddo i ddarparwr gwahanol. Er enghraifft, efallai na fyddwch yn gallu cymryd unrhyw arian parod di-dreth.</p>
+ <p>Efallai y bydd yn rhaid i chi hefyd aros tan ddyddiad ymddeol penodol cyn y gallwch gymryd eich arian. Gofynnwch i’ch darparwr pensiwn esbonio unrhyw gyfyngiadau sy’n berthnasol i chi.</p>
 <% when 'adjustable_income' %>
-  <h3 class="option">Check if you’re receiving income from a drawdown arrangement</h3>
-  <p>If you’re already receiving income from a drawdown arrangement, you might be unable to use some of the pension options we talked about. Ask your provider to explain any restrictions that apply to you.</p>
+  <h3 class="option">Gwiriwch a ydych yn derbyn incwm gan drefniant tynnu i lawr</h3>
+  <p>Os ydych eisoes yn derbyn incwm gan drefniant tynnu i lawr, efallai na fyddwch yn gallu defnyddio rhai o’r opsiynau pensiwn y buom yn sôn amdanynt. Gofynnwch i'ch darparwr esbonio unrhyw gyfyngiadau sy'n berthnasol i chi.</p>
 <% when 'inherited_pot' %>
-  <h3 class="option">Inherited pension pots might have different options</h3>
-  <p>As you inherited your pension pot, you might not be able to use some of the options we talked about. Ask your pension provider to explain which options apply to you.</p>
-  <p>The amount of tax you’ll usually pay will also be different to the information provided. Find out more at: <a href="https://www.gov.uk/tax-on-pension-death-benefits" target="_blank">gov.uk/tax-on-pension-death-benefits</a>.</p>
+  <h3 class="option">Efallai y bydd gan gronfeydd pensiwn etifeddol opsiynau gwahanol</h3>
+  <p>Gan eich bod wedi etifeddu eich cronfa bensiwn, efallai na fyddwch yn gallu defnyddio rhai o’r opsiynau y buom yn sôn amdanynt. Gofynnwch i’ch darparwr pensiwn egluro pa opsiynau sy’n berthnasol i chi.</p>
+  <p>Bydd swm y dreth y byddwch yn ei dalu fel arfer hefyd yn wahanol i’r wybodaeth a ddarperir. Darganfyddwch fwy ar: <a href="https://www.gov.uk/tax-on-pension-death-benefits" target="_blank">gov.uk/tax-on-pension-death-benefits</a>.</p>
 <% when 'fixed_term_annuity' %>
-  <h3 class="option">Contact your fixed-term annuity provider</h3>
-  <p>As you have a fixed-term annuity, you’ll receive a maturity amount when it ends. You cannot take any tax-free cash from this amount, so this limits your options for taking this pension.</p>
-  <p>You can choose to use the maturity amount to buy another annuity or put the money into a pension drawdown product, so you can take income as and when you need it.</p>
-  <p>Ask your pension provider for full details and to explain any restrictions that apply to you.</p>
+  <h3 class="option">Cysylltwch â'ch darparwr blwydd-dal cyfnod penodol</h3>
+  <p>Gan fod gennych flwydd-dal cyfnod penodol, byddwch yn derbyn swm aeddfedrwydd pan ddaw i ben. Ni allwch gymryd unrhyw arian parod di-dreth o’r swm hwn, felly mae hyn yn cyfyngu eich opsiynau ar gyfer cymryd y pensiwn hwn.</p>
+  <p>Gallwch ddewis defnyddio’r swm aeddfedrwydd i brynu blwydd-dal arall neu roi’r arian mewn cynnyrch tynnu pensiwn i lawr, fel y gallwch gymryd incwm pan fyddwch ei angen.</p>
+  <p>Gofynnwch i’ch darparwr pensiwn am fanylion llawn ac i egluro unrhyw gyfyngiadau sy’n berthnasol i chi.</p>
 <% end %>
 
 <% if next_steps? %>
   <!-- section: next steps -->
   <% if updated_beneficiaries? %>
-    <h3 class="option">Update your beneficiary</h3>
-    <p>Check your provider knows who you’d like to inherit your pension – your beneficiaries. To find out what happens to your pension after you die, go to: <a href="https://www.moneyhelper.org.uk/pensions-after-you-die" target="_blank">moneyhelper.org.uk/pensions-after-you-die</a>.</p>
-    <p><strong>10 minute read</strong></p>
+    <h3 class="option">Diweddarwch eich buddiolwr</h3>
+    <p>Gwiriwch fod eich darparwr yn gwybod pwy yr hoffech i etifeddu eich pensiwn – a elwir yn fuddiolwr neu fuddiolwyr. I ddarganfod beth sy’n digwydd i’ch pensiwn ar ôl i chi farw, ewch i: <a href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems/pensions-after-death" target="_blank">moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems/pensions-after-death</a>.</p>
+    <p><strong>10 munud i’w ddarllen</strong></p>
   <% end %>
   <% if regulated_financial_advice? %>
-    <h3 class="option">Consider paying for regulated financial advice</h3>
-    <p>Drawing your pension is complex. To find a regulated financial adviser, go to: <a href="https://www.moneyhelper.org.uk/find-retirement-adviser" target="_blank">moneyhelper.org.uk/find-retirement-adviser</a>.</p>
-    <p><strong>5 minute read</strong></p>
+    <h3 class="option">Ystyriwch dalu am gyngor ariannol rheoledig</h3>
+    <p>Mae tynnu eich pensiwn yn gymhleth. I ddod o hyd i ymgynghorydd ariannol rheoledig, ewch i: <a href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/find-a-retirement-adviser" target="_blank">moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/find-a-retirement-adviser</a>.</p>
+    <p><strong>5 munud i’w ddarllen</strong></p>
   <% end %>
   <% if kept_track_of_all_pensions? %>
-    <h3 class="option">Track down old or lost pensions</h3>
-    <p>Use our step-by-step guide to find old or lost pensions at: <a href="https://www.moneyhelper.org.uk/find-pensions" target="_blank">moneyhelper.org.uk/find-pensions</a>.</p>
-    <p><strong>3 minute read</strong></p>
+    <h3 class="option">Olrhain hen bensiynau neu bensiynau coll</h3>
+    <p>Defnyddiwch ein canllaw cam wrth gam i ddod o hyd i hen bensiynau neu bensiynau coll ar: <a href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems/tracing-and-finding-lost-pensions" target="_blank">moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems/tracing-and-finding-lost-pensions</a>.</p>
+    <p><strong>3 munud i’w ddarllen</strong></p>
   <% end %>
   <% if interested_in_pension_transfer? %>
-    <h3 class="option">Ask about transferring</h3>
-    <p>Ask your current pension provider if you’d lose any benefits before you transfer your pension. Find out more at: <a href="https://www.moneyhelper.org.uk/dc-pension-transfers" target="_blank">moneyhelper.org.uk/dc-pension-transfers</a>.</p>
-    <p><strong>10 minute read</strong></p>
+    <h3 class="option">Gofyn am drosglwyddo</h3>
+    <p>Gofynnwch eich darparwr pensiwn presennol os byddwch yn colli unrhyw fuddion cyn i chi drosglwyddo eich pensiwn. Darganfyddwch fwy ar: <a href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/transferring-your-defined-contribution-pension" target="_blank">moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/transferring-your-defined-contribution-pension</a>.</p>
+    <p><strong>10 munud i’w ddarllen</strong></p>
   <% end %>
   <% if created_retirement_budget? %>
-    <h3 class="option">Check your retirement savings</h3>
-    <p>To make sure you’re on track to retire comfortably, regularly check Regularly check your pension and other savings to make sure you’re on track for a comfortable retirement. Find out how at: <a href="https://www.moneyhelper.org.uk/retirement-savings" target="_blank">moneyhelper.org.uk/retirement-savings</a>.</p>
-    <p><strong>4 minute read</strong></p>
+    <h3 class="option">Gwiriwch eich cynilion ymddeol</h3>
+    <p>Gwiriwch eich pensiwn a chynilion eraill yn rheolaidd i sicrhau eich bod ar y trywydd iawn i gael ymddeoliad cyfforddus. Darganfyddwch sut ar: <a href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/check-the-progress-of-your-pension-and-retirement-savings" target="_blank">moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/check-the-progress-of-your-pension-and-retirement-savings</a>.</p>
+    <p><strong>4 munud i’w ddarllen</strong></p>
   <% end %>
   <% if know_how_much_state_pension? %>
-    <h3 class="option">View your State Pension forecast</h3>
-    <p>To see how much State Pension you’re on track to get and potential ways to boost it, go to: <a href="https://www.gov.uk/check-state-pension" target="_blank">gov.uk/check-state-pension</a>.</p>
-    <p><strong>5 minute read</strong></p>
+    <h3 class="option">Gweld eich rhagolwg Pensiwn y Wladwriaeth</h3>
+    <p>I weld faint o Bensiwn y Wladwriaeth rydych ar y trywydd i’w gael a ffyrdd potensial o’i hybu, ewch i: <a href="https://www.gov.uk/gwirio-eich-pensiwn-y-wladwriaeth" target="_blank">gov.uk/gwirio-eich-pensiwn-y-wladwriaeth</a>.</p>
+    <p><strong>5 munud i’w ddarllen</strong></p>
   <% end %>
   <% if received_state_benefits? %>
-    <h3 class="option">Check if your benefit payments will be affected</h3>
-    <p>Taking money from your pension can affect your entitlement to certain benefits. Talk to the office that pays your benefits for help. You can also use our Benefits calculator to see what might happen if your income changes at: <a href="https://www.moneyhelper.org.uk/benefit-calculator" target="_blank">moneyhelper.org.uk/benefit-calculator</a>.</p>
-    <p><strong>5 minute read</strong></p>
+    <h3 class="option">Gwiriwch a fydd eich taliadau budd-daliadau yn cael eu heffeithio</h3>
+    <p>Gall cymryd arian o’ch pensiwn effeithio ar eich hawl i fudd-daliadau penodol. Siaradwch â’r swyddfa sy’n talu eich budd-daliadau am help. Gallwch hefyd defnyddio ein Cyfrifiannell budd-daliadau i weld beth allai ddigwydd os yw’ch incwm yn newid ar: <a href="https://www.moneyhelper.org.uk/cy/benefits/benefits-calculator" target="_blank">moneyhelper.org.uk/cy/benefits/benefits-calculator</a>.</p>
+    <p><strong>5 munud i’w ddarllen</strong></p>
   <% end %>
   <% if pension_to_pay_off_debts? %>
-    <h3 class="option">Get free debt advice</h3>
-    <p>Before using your pension to pay off debts, you can find free debt advice using our tool at: <a href="https://www.moneyhelper.org.uk/find-debt-advice" target="_blank">moneyhelper.org.uk/find-debt-advice</a>.</p>
-    <p><strong>5 minute read</strong></p>
+    <h3 class="option">Cael cyngor ar ddyledion am ddim</h3>
+    <p>Cyn defnyddio eich pensiwn i ad-dalu dyledion, gallwch ddod o hyd i gyngor ar ddyledion am ddim gan ddefnyddio ein teclyn ar: <a href="https://www.moneyhelper.org.uk/cy/money-troubles/dealing-with-debt/debt-advice-locator" target="_blank">moneyhelper.org.uk/cy/money-troubles/dealing-with-debt/debt-advice-locator</a>.</p>
+    <p><strong>5 munud i’w ddarllen</strong></p>
   <% end %>
   <% if living_or_planning_overseas? %>
-    <h3 class="option">Take your pension in another country</h3>
-    <p>Learn how moving abroad affects your pension at: <a href="https://www.moneyhelper.org.uk/retire-abroad" target="_blank">moneyhelper.org.uk/retire-abroad</a>.</p>
-    <p><strong>8 minute read</strong></p>
+    <h3 class="option">Cymryd eich pensiwn mewn gwlad arall</h3>
+    <p>Dysgwch sut mae symud tramor yn effeithio ar eich pensiwn ar: <a href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/moving-living-and-retiring-abroad" target="_blank">moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/moving-living-and-retiring-abroad</a>.</p>
+    <p><strong>8 munud i’w ddarllen</strong></p>
   <% end %>
   <% if finalised_a_will? %>
-    <h3 class="option">Make a will</h3>
-    <p>Read our step-by-step guide to making a will at: <a href="https://www.moneyhelper.org.uk/wills" target="_blank">moneyhelper.org.uk/wills</a>.</p>
-    <p><strong>9 minute read</strong></p>
+    <h3 class="option">Gwnewch ewyllys</h3>
+    <p>Darllenwch ein canllaw cam wrth gam i greu ewyllys ar: <a href="https://www.moneyhelper.org.uk/cy/family-and-care/death-and-bereavement/planning-what-to-leave-in-your-will" target="_blank">moneyhelper.org.uk/cy/family-and-care/death-and-bereavement/planning-what-to-leave-in-your-will</a>.</p>
+    <p><strong>9 munud i’w ddarllen</strong></p>
   <% end %>
   <% if setup_power_of_attorney? %>
-    <h3 class="option">Set up a power of attorney</h3>
-    <p>Learn how to set up a power of attorney at: <a href="https://www.moneyhelper.org.uk/attorney" target="_blank">moneyhelper.org.uk/attorney</a>.</p>
-    <p><strong>15 minute read</strong></p>
+    <h3 class="option">Sefydlu atwrneiaeth</h3>
+    <p>Dysgwch sut i sefydlu atwrneiaeth ar: <a href="https://www.moneyhelper.org.uk/cy/family-and-care/long-term-care/setting-up-a-power-of-attorney" target="_blank">moneyhelper.org.uk/cy/family-and-care/long-term-care/setting-up-a-power-of-attorney</a>.</p>
+    <p><strong>15 munud i’w ddarllen</strong></p>
   <% end %>
   <div class="page-break"></div>
 <% end %>
 
 <!-- section: getting started -->
-<h2>Getting started</h2>
+<h2>Cychwyn arni</h2>
 
 <% if defined?(urn) && urn.present? %>
 <p class="summary t-urn">Your Pension Wise reference: <strong><%= urn %></strong></p>
 <% end %>
 
-<p class="summary">This is a summary of your defined contribution pension options. This is your personal or workplace pension and is based on how much has been paid into your pot.</p>
+<p class="summary">Dyma grynodeb o'ch opsiynau pensiwn cyfraniadau wedi’u diffinio. Eich pensiwn personol neu weithle yw hwn ac mae’n seiliedig ar faint sydd wedi’i dalu i mewn i’ch cronfa.</p>
 
-<p class="emphasise">This is not a final salary or career average pension.</p>
+<p class="emphasise">Nid yw hwn yn bensiwn gyflog terfynol neu bensiwn cyfartaledd gyrfa.</p>
 
-<p>You may have more than one defined contribution pension pot. You can choose different options for each pot.  Ask your provider if your pension has any special features or restrictions. This will help you to decide on an option. For example, you may have a guaranteed annuity rate. This could provide a higher income than annuities offered by other providers.</p>
+<p>Efallai y bydd gennych fwy nag un cronfa bensiwn cyfraniadau wedi’u diffinio. Gallwch ddewis gwahanol opsiynau ar gyfer pob cronfa. Gofynnwch i’ch darparwr a oes gan eich pensiwn unrhyw nodweddion neu gyfyngiadau arbennig. Bydd hyn yn eich helpu i benderfynu ar opsiwn. Er enghraifft, efallai y bydd gennych gyfradd blwydd-dal gwarantedig. Gallai hyn ddarparu incwm uwch na'r blwydd-daliadau a gynigir gan ddarparwyr eraill.</p>
 
 <% if appointment_50_54? %>
   <!-- section: guidance about when you can take your pension -->
-  <p>You can’t usually take your pension before you’re 55 except in some rare cases, eg if you have a serious illness or a ‘protected pension age’.</p>
-  <p>The earliest age you can access your pension pot is increasing to age 57 on 6 April 2028.</p>
-  <p>This is important for those born after 6 April 1971, as it could mean that you are unable to access your pension until up to 2 years later than you expected.</p>
-  <p>The rules are complicated so you should check with your pension provider.</p>
+  <p>Fel arfer ni allwch gymryd eich pensiwn cyn eich bod yn 55 ac eithrio mewn rhai achosion prin, e.e. os oes gennych salwch difrifol neu ‘oedran pensiwn gwarchodedig’.</p>
+  <p>Mae’r oedran cynharaf y gallwch gael mynediad i’ch cronfa bensiwn yn cynyddu i 57 oed ar 6 Ebrill 2028.</p>
+  <p>Mae hyn yn bwysig i’r rhai a aned ar ôl 6 Ebrill 1971, gan y gallai olygu na allwch gael mynediad at eich pensiwn hyd at 2 flynedd yn hwyrach na’r disgwyl.</p>
+  <p>Mae'r rheolau'n gymhleth felly dylech wirio gyda'ch darparwr pensiwn.</p>
 <% end %>
 
 <p>
-  Most people are eligible for the State Pension paid by Government.
+  Mae'r rhan fwyaf o bobl yn gymwys i gael Pensiwn y Wladwriaeth a delir gan y Llywodraeth.
   <% if appointment_50_54? %>
-    To find out how much you may be entitled to you can go to the <a target="_blank" rel="external" href="https://www.gov.uk">GOV.UK</a> website and get a State Pension statement.
+    I gael gwybod faint y gallech fod â hawl iddo gallwch fynd i wefan <a target="_blank" rel="external" href="https://www.gov.uk">GOV.UK</a> a chael datganiad Pensiwn y Wladwriaeth.
   <% else %>
-    If you’re not already claiming the State Pension, you can go to the <a target="_blank" rel="external" href="https://www.gov.uk">GOV.UK</a> website for information on how to apply for your State Pension statement.
+    Os nad ydych eisoes yn hawlio Pensiwn y Wladwriaeth gallwch fynd i wefan <a target="_blank" rel="external" href="https://www.gov.uk">GOV.UK</a> am wybodaeth ar sut i wneud cais am eich Pensiwn y Wladwriaeth.
   <% end %>
-  Contact the International Pension Centre on +44 191 218 7777 if you live abroad.
+  Cysylltwch â'r Ganolfan Bensiynau Ryngwladol ar +44 191 218 7777 os ydych yn byw dramor.
 </p>
 
 <% if large_text? %><div class="page-break"></div><% end %>
-<h3 class="option">What you’ll find on the MoneyHelper website</h3>
+<h3 class="option">Beth fyddwch yn dod o hyd iddo ar wefan HelpwrArian</h3>
 
-<p>The MoneyHelper website explains your pension options and how to make the best use of your money. Before you decide on a pension option go to <a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension">moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension</a> for detailed information about:</p>
+<p>Mae gwefan HelpwrArian yn esbonio eich opsiynau pensiwn a sut i wneud y defnydd gorau o'ch arian. Cyn i chi benderfynu ar opsiwn pensiwn ewch i <a href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension" target="_blank">moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension</a> i gael gwybodaeth fanwl am:</p>
 
 <ul class="list">
   <% if appointment_50_54? %>
-    <li>Working out how much money you’ll have in retirement</li>
-    <li>Planning how long your money needs to last</li>
-    <li>Taking your pension before you’re 55</li>
-    <li>How to avoid a pension scam</li>
-    <li>Tax you pay on your pension</li>
-    <li>How your pension could affect your entitlement to benefits</li>
+    <li>Gyfrifo faint o arian fydd gennych ar ôl ymddeol</li>
+    <li>Cynllunio pa mor hir y mae angen i'ch arian bara</li>
+    <li>Cymryd eich pensiwn cyn eich bod yn 55</li>
+    <li>Sut i osgoi sgam pensiwn</li>
+    <li>Treth a dalwch ar eich pensiwn</li>
+    <li>Sut y gallai eich pensiwn effeithio ar eich hawl i fudd-daliadau</li>
   <% else %>
-    <li>Tax you pay on your pension</li>
-    <li>Working out how much money you’ll have now and in retirement</li>
-    <li>Planning how long your money needs to last</li>
-    <li>How your pension could affect your entitlement to benefits</li>
-    <li>How to avoid a pension scam</li>
+    <li>Treth a dalwch ar eich pensiwn</li>
+    <li>Cyfrifo faint o arian fydd gennych nawr ac mewn ymddeoliad</li>
+    <li>Cynllunio pa mor hir y mae angen i'ch arian bara</li>
+    <li>Sut y gallai eich pensiwn effeithio ar eich hawl i fudd-daliadau</li>
+    <li>Sut i osgoi sgam pensiwn</li>
   <% end %>
 </ul>
 
-<p>If you can’t use our website you can get pensions help from the MoneyHelper Pension Guidance Helpline or call Citizens Advice to find your nearest Pension Wise location (see ‘Further free and impartial guidance’).</p>
+<p>Os na allwch ddefnyddio ein gwefan gallwch gael cymorth pensiynau gan Linell Gymorth Arweiniad Pensiynau HelpwrArian neu ffoniwch Cyngor ar Bopeth i ddod o hyd i’ch lleoliad Pension Wise agosaf (gweler ‘Canllawiau pellach am ddim a diduedd’).</p>
 
-<p>The information in this document only applies to UK taxpayers with UK-based pensions. For information on tax when living abroad go to our website, <a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/moving-living-and-retiring-abroad">moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/moving-living-and-retiring-abroad</a></p>
+<p>Mae’r wybodaeth yn y ddogfen hon yn berthnasol i drethdalwyr y DU sydd â phensiynau yn y DU yn unig. I gael gwybodaeth am dreth wrth fyw dramor ewch i’n gwefan, <a target="_blank" href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/moving-living-and-retiring-abroad">moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/moving-living-and-retiring-abroad</a></p>

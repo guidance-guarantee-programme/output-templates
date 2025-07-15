@@ -1,5 +1,5 @@
 module Output
   module Templates
-    VERSION = '7.0.0'.freeze
+    VERSION = '7.2.0'.freeze
   end
 end
