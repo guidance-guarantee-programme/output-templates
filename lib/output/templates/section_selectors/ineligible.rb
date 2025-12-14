@@ -3,7 +3,7 @@ module Output
     module SectionSelectors
       class Ineligible
         def call(*)
-          %i[header ineligible]
+          %i[header ineligible scams further_guidance footer]
         end
       end
     end
